@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/**
+/*
 *
 *Start:main
-* 
+*
 *print out the variable declared
 *
 *Return: 0
