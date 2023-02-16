@@ -23,7 +23,7 @@ int main()
 	      printf("%s", win32);
 	  #endif
 #else
-	  printf("%s", win64);
+	  printf("%s", win32);
 #endif
 	return 0;
 }
