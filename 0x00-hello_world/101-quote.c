@@ -10,8 +10,8 @@
 
 int main(void)
 {
- char *a = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
- 
- printf("%s", a);
- return (1);
+char *a = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+printf("%s", a);
+return (1);
 }
