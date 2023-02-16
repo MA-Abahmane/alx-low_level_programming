@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 /**
-*Start: main
-*
-*print out the variable declared
-*
-*Return: 0
-*/
+	 *
+	 * comments in C source code.
+	 * Please use it consistently.
+	 *
+	 * Description:  print out the var,
+	 *
+	 */
 
 int main(void)
 {
