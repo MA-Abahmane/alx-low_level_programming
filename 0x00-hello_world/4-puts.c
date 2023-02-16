@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-/*
-*
-*Start:main
-*
-*print out the variable declared
-*
-*Return: 0
-*
-*/
+/**
+ * main - Entry point
+ * 
+ * Description: 'the program's description'
+ * 
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
