@@ -18,7 +18,7 @@ int main()
   
 #ifdef _WIN32 // Includes both 32 bit and 64 bit
 	  #ifdef _WIN64
-	      printf("%s", win64);
+	      printf("%s", win32);
 	  #else 
 	      printf("%s", win32);
 	  #endif
