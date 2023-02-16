@@ -16,12 +16,8 @@ int main()
   char*win64 = "Size of a char: 1 byte(s)\nSize of an int: 4 byte(s)\nSize of a long int: 8 byte(s)\nSize of a long long int: 8 byte(s)\nSize of a float: 4 byte(s)\n";
 
   
-#ifdef _WIN32 // Includes both 32 bit and 64 bit
-	  #ifdef _WIN64
-	      printf("%s", win64);
-	  #else 
-	      printf("%s", win32);
-	  #endif
+#ifdef _WIN32
+	  printf("%s", win32);
 #else
 	  printf("%s", win64);
 #endif
