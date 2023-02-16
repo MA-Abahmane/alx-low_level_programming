@@ -2,9 +2,9 @@
 
 /**
  * main - Entry point
- * 
- * Description: 'the program's description'
- * 
+ *
+ * Description: 'Print the var'
+ *
  * Return: Always 0 (Success)
  */
 
