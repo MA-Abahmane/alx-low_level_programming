@@ -21,8 +21,8 @@ putchar(i);
 if (i != 57)
 {
 putchar(j);
-}
 putchar(k);
+}
 }
 putchar('\n');
 return (0);
