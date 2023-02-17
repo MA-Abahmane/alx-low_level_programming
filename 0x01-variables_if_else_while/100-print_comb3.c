@@ -19,14 +19,11 @@ for (i = 48; i < 57; i++)
 {
 for (j = i + 1; j < 58; j++)
 {
-// nums 00
 putchar(i);
 putchar(j);
 if (i != 56 || j != 57)
 {
-// parenteses ','
 putchar(f);
-// space ' '
 putchar(k);
 }
 }
