@@ -19,7 +19,7 @@ for (i = 48; i < 57; i++)
 {
 for (j = i + 1; j < 58; j++)
 {
-for (l = j+1; l < 58; l++)
+for (l = j + 1; l < 58; l++)
 {
 putchar(i);
 putchar(j);
