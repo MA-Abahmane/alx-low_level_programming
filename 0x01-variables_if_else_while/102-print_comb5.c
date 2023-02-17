@@ -10,26 +10,31 @@
  */
 int main(void)
 {
-int i, j, k, f, count;
+int i, j, k, l, x, y;
 
-f = 44;
-k = 32;
-count = 0;
-
+x = 44;
+y = 32;
+  
 for (i = 48; i < 58; i++)
 {
-for (j = 48; j < 58; j++)
+for (j = 48; j < 57; j++)
+{
+for (k = 48; k < 58; k++)
+{
+for (l = 48; l < 58; l++)
 {
 putchar(i);
 putchar(j);
-count++;
-if (i != 57 || j != 57)
-{
-if (count % 2 == 0)
-{
-putchar(f);
-}
+putchar(y);
 putchar(k);
+putchar(l);
+      
+if (i != 57 || j != 56 || k != 57 || l != 57)
+{
+putchar(x);
+}
+putchar(y);
+}
 }
 }
 }
