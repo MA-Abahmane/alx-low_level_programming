@@ -25,9 +25,6 @@ for (; k < 58; k++)
 {
 for (; l < 58; l++)
 {
-
-if (i != 48 || j != 48 || k != 48 || l != 48)
-{
 putchar(i);
 putchar(j);
 putchar(y);
@@ -37,8 +34,8 @@ putchar(l);
 if (i != 57 || j != 56 || k != 57 || l != 57)
 {
 putchar(x);
-}
 putchar(y);
+}
 }
 }
 l = 48;
