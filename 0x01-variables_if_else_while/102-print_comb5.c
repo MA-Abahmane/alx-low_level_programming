@@ -21,19 +21,23 @@ for (j = 48; j < 57; j++)
 {
 for (k = 48; k < 58; k++)
 {
-for (l = 49; l < 58; l++)
+for (l = 48; l < 58; l++)
+{
+
+if (i != 48 || j != 48 || k != 48 || l != 48)
 {
 putchar(i);
 putchar(j);
 putchar(y);
 putchar(k);
 putchar(l);
-    
+
 if (i != 57 || j != 56 || k != 57 || l != 57)
 {
 putchar(x);
 }
 putchar(y);
+}
 }
 }
 }
