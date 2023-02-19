@@ -11,11 +11,11 @@
 int main(void)
 {
 
-char *win32_1 = "Size of a char: 1 byte(s)\nSize of an int: 4 byte(s)\n;
+char *win32_1 = "Size of a char: 1 byte(s)\nSize of an int: 4 byte(s)\n";
 char *win32_2 = "Size of a long int: 4 byte(s)\n";
 char *win32_3 = "Size of a long long int: 8 byte(s)\n";
 char *win32_4 = "Size of a float: 4 byte(s)\n";
-char *win64_1 = "Size of a char: 1 byte(s)\nSize of an int: 4 byte(s)\n;
+char *win64_1 = "Size of a char: 1 byte(s)\nSize of an int: 4 byte(s)\n";
 char *win64_2 = "Size of a long int: 8 byte(s)\n";
 char *win64_3 = "Size of a long long int: 8 byte(s)\n";
 char *win64_4 = "Size of a float: 4 byte(s)\n";
