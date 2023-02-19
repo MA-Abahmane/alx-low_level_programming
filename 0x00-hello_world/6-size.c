@@ -11,14 +11,16 @@
 int main(void)
 {
 
-char *win32 = "Size of a char: 1 byte(s)\nSize of an int: 4 byte(s)\nSize of a long int: 4 byte(s)\nSize of a long long int: 8 byte(s)\nSize of a float: 4 byte(s)\n";
-char *win64 = "Size of a char: 1 byte(s)\nSize of an int: 4 byte(s)\nSize of a long int: 8 byte(s)\nSize of a long long int: 8 byte(s)\nSize of a float: 4 byte(s)\n";
+char *win32_1 = "Size of a char: 1 byte(s)\nSize of an int: 4 byte(s)\nSize of a long int: 4 byte(s)\n"
+char *win32_2 =  "Size of a long long int: 8 byte(s)\nSize of a float: 4 byte(s)\n";
+char *win64_1 = "Size of a char: 1 byte(s)\nSize of an int: 4 byte(s)\nSize of a long int: 8 byte(s)\n"
+char *win64_2 = "Size of a long long int: 8 byte(s)\nSize of a float: 4 byte(s)\n";
 
 
 #ifdef _WIN32
-printf("%s", win32);
+printf("%s%s", win32_1, win32_2);
 #else
-printf("%s", win64);
+printf("%s%s", win64_1, win64_2);
 #endif
 return (0);
 }
