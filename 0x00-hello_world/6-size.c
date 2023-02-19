@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: 'prinf the var'
+ * Description: 'find operating system type'
  *
  * Return: Always 1 (Success)
  */
@@ -20,10 +20,10 @@ char *win64_2 = "Size of a long int: 8 byte(s)\n";
 char *win64_3 = "Size of a long long int: 8 byte(s)\n";
 char *win64_4 = "Size of a float: 4 byte(s)\n";
 
-#ifdef _WIN32
-printf("%s%s%s%s", win32_1, win32_2, win32_3, win32_4);
-#else
+#ifdef _WIN64
 printf("%s%s%s%s", win64_1, win64_2, win64_3, win64_4);
+#else
+printf("%s%s%s%s", win32_1, win32_2, win32_3, win32_4);
 #endif
 return (0);
 }
