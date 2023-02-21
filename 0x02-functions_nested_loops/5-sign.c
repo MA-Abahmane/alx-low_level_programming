@@ -9,7 +9,6 @@
  *
  * code by: MAAbahmane
  */
-
 int print_sign(int n)
 {
 if (n > 0)
