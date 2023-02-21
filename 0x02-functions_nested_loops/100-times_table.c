@@ -1,9 +1,9 @@
-//#include "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
  * print_times_table - print tame table of given num
- * @num:  given num
+ * @n:  given num
  * Return:  the table of numbers
  */
 
