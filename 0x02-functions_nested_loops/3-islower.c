@@ -1,3 +1,7 @@
+/**
+ * MAAbahamane
+ */
+
 #include "main.h"
 #include <ctype.h>
 
@@ -8,16 +12,10 @@ int _islower(int c)
 {
 if (islower(c))
 {
-/**
- * u_int - Typedef for unsigned int
- */
 return (1);
 }
 else
 {
-/**
- * u_int - Typedef for unsigned int
- */
 return (0);
 }
 }
