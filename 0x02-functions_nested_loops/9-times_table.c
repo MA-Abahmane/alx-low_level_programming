@@ -15,7 +15,7 @@ printf("%d", j * i);
 
 if (j != 9)
 {
-if ((i * j) < 10 )
+if ((i * (j+1)) < 10 )
 {
 printf(",  ");
 
