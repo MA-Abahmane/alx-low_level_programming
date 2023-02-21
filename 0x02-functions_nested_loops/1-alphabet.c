@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * main.h - Entry point
  *
  * Description: [Print [a..z\n] from another function]
@@ -8,12 +8,12 @@
  * Return: None
  */
 void print_alphabet(void)
-{
-int i;
-
 /*
  * code by: MAAbahmane
  */
+{
+int i;
+
 for (i = 97; i < 123; i++)
 {
 _putchar(i);
