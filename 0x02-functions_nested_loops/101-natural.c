@@ -4,10 +4,20 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return:  0
  */
 int main(void)
 {
+int i = 0;
 
-	return (0);
+while (i < 1024)
+{
+if (i % 5 == 0 || i % 3 == 0)
+{
+i = i;
+}
+}
+printf("%d", i);
+
+return (0);
 }
