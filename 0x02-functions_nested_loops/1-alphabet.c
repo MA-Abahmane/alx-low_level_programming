@@ -8,8 +8,7 @@
  * Return: None
  */
 
-/*code by: 
-MAAbahmane*/void print_alphabet(void)
+/**code by: MAAbahmane*/void print_alphabet(void)
 {
 int i;
 
