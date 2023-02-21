@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * _isalpha : find out if char is lowercased
+ * _isalpha - find out if char is a letter
  * @c:  is a given char to check
  * Return:  1 if its a letter 0 if not
  */
