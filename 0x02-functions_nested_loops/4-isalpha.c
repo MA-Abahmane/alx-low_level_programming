@@ -13,7 +13,7 @@
 
 int _isalpha(int c)
 {
-if (isalpha(c))
+if (_isalpha(c))
 {
 return (1);
 }
