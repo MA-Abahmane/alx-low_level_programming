@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * _islower - find out if letter is upper or lower cased
+ * -_islower - find out if letter is upper or lower cased
  */
 int _islower(int c)
 {
