@@ -1,16 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 #include <ctype.h>
-/**
- * main - Entry point
- *
- * Description: [Print [a..z\n] from another function]
- *
- * Return: Always 0
- *
- * code by: MAAbahmane
- */
 
+/**
+ * _isalpha - check if its a letter
+ */
 int _isalpha(int c)
 {
 if (isalpha(c))
