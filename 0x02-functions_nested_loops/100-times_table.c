@@ -20,11 +20,11 @@ for (j = 0; j <= n; j++)
 printf("%d", j * i);
 if (j != n)
 {
-if ((i * (j + 1)) > 10)
+if ((i * (j + 1)) >= 10)
 {
 printf(",  ");
 }
-else if ((i * (j + 1)) > 100)
+else if ((i * (j + 1)) >= 100)
 {
 printf(", ");
 }
