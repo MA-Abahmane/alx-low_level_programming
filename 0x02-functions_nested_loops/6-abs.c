@@ -3,7 +3,9 @@
 #include <stdlib.h>
 
 /**
- * isalpha - check if its a letter
+ * _abs - find oabselute value
+ * @n:  given value
+ * Return:  abselute value of given number
  */
 int _abs(int n)
 {
