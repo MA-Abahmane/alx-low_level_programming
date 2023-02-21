@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
+#include <ctype.h>
 /**
  * main - Entry point
  *
@@ -13,7 +13,7 @@
 
 int _isalpha(int c)
 {
-if (_isalpha(c))
+if (isalpha(c))
 {
 return (1);
 }
