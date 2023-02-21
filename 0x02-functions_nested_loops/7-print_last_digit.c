@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main.h - Entry point
@@ -11,10 +10,11 @@
  *
  * code by: MAAbahmane
  */
-
 int print_last_digit(int m)
 {
 int lst_dig = m % 10;
-puts(lst_dig);
+
+_putchar(lst_dig);
+
 return (lst_dig);
 }
