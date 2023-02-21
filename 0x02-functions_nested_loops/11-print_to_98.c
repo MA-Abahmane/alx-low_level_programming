@@ -28,5 +28,4 @@ printf(", ");
 }
 num--;
 }
-return 0;
 }
