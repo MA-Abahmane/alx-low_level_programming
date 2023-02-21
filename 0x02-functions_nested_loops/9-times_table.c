@@ -3,7 +3,7 @@
 /**
  * jack_bauer - watch numbers
  */
-void main(void)
+void times_table(void)
 {
 int i, j;
 
