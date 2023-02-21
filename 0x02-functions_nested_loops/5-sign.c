@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * main.h - Entry point
+ * print_sign - Entry point
  *
  * Description: [ A function that prints the sign of a number]
+ *
+ * @n: given intiger to check its type
  *
  * Return: Always 1, 0, or -1
  *
