@@ -1,13 +1,12 @@
-/**
- * MAAbahamane
- */
-
 #include "main.h"
 #include <ctype.h>
 
 /**
- * the _islower - find out if letter is upper or lower cased
+ * _islower - find out if char is lowercased
+ * @C - is a given char to check
+ * return - 1 if lowercase 0 if not
  */
+
 int _islower(int c)
 {
 if (islower(c))
