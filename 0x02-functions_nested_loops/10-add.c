@@ -1,7 +1,11 @@
 #include "main.h"
 
+
 /**
- * add - sum 2 given numbers
+ * add - add 2 given numbers
+ * @a:  first given number
+ * @b:  second given number
+ * Return:  the sum
  */
 int add(int a, int b)
 {
