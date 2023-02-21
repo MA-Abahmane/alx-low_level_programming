@@ -28,7 +28,7 @@ else if ((i * (j + 1)) > 9)
 {
 printf(",  ");
 }
-else 
+else
 {
 printf(",   ");
 }
