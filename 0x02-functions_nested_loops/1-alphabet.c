@@ -6,7 +6,9 @@
  * Description: [Print [a..z\n] from another function]
  *
  * Return: None
- */void print_alphabet(void)
+ */
+/*code by: MAAbahmane*/
+void print_alphabet(void)
 {
 int i;
 
