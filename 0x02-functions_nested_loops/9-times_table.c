@@ -13,7 +13,7 @@ for (j = 0; j <= 9; j++)
 {
 printf("%d", j * i);
 
-if (j == 9)
+if (j != 9)
 {
 if ((i * j) < 10 )
 {
