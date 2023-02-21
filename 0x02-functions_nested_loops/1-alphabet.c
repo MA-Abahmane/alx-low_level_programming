@@ -1,6 +1,6 @@
 #include "main.h"
 
-/**
+/*
  * main.h - Entry point
  *
  * Description: [Print [a..z\n] from another function]
