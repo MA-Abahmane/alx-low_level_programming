@@ -2,15 +2,8 @@
 #include <stdio.h>
 
 /**
- * main.h - Entry point
- *
- * Description: [A a function that computes the absolute value of an integer]
- *
- * Return: Always abs_val
- *
- * code by: MAAbahmane
+ * print_last_digit
  */
-
 int print_last_digit(int m)
 {
 int lst_dig;
