@@ -24,9 +24,13 @@ if ((i * (j + 1)) > 10)
 {
 printf(",  ");
 }
-else
+else if ((i * (j + 1)) > 100)
 {
-printf(",  ");
+printf(",   ");
+}
+else 
+{
+printf(", ");
 }
 }
 }
