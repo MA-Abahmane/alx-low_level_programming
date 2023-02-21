@@ -26,7 +26,7 @@ printf(",  ");
 }
 else
 {
-printf(", ");
+printf(",  ");
 }
 }
 }
@@ -35,7 +35,7 @@ putchar('\n');
 }
 if (n == 0)
 {
-printf("%d", n);
+printf("%d\n", n);
 }
 return;
 }
