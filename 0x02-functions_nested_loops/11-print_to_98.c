@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - start from number given and go to 98
@@ -9,10 +10,10 @@ if (num < 98)
 {
 while(num < 98)
 {
-_printf("%d", num);
+printf("%d", num);
 if (num != 98)
 {
-_printf(", ");
+printf(", ");
 }
 num++;
 }
@@ -20,10 +21,10 @@ num++;
 if (num > 98)
 {
 while(num > 98)
-_printf("%d", num);
+printf("%d", num);
 if (num != 98)
 {
-_printf(", ");
+printf(", ");
 }
 num--;
 }
