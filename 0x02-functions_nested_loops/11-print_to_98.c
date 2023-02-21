@@ -18,7 +18,7 @@ printf(", ");
 num++;
 }
 }
-if (num > 98)
+else if (num > 98)
 {
 while(num >= 98)
 printf("%d", num);
@@ -28,4 +28,9 @@ printf(", ");
 }
 num--;
 }
+esle 
+{
+printf("98");
+}
+_putchar('\n');
 }
