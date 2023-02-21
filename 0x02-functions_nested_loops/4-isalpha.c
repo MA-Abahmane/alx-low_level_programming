@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * _isalpha - check if its a letter
+ * isalpha - check if its a letter
  */
 int _isalpha(int c)
 {
