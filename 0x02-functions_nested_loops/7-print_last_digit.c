@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * print_last_digit - return m
+ * print_last_digit - return: lst_dig
+ *
+ * return: lst_dig
  */
 int print_last_digit(int m)
 {
