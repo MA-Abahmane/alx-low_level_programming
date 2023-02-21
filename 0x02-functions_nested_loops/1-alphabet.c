@@ -1,22 +1,13 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - Entry point
+ * main.h - Entry point
  *
  * Description: [Print [a..z\n] from another function]
  *
- * Return: Always 0
+ * Return: None
  * 
  * code by: MAAbahmane
  */
-
-void print_alphabet(void);
-
-int main(void)
-{
-print_alphabet();
-return (0);
-}
 
 void print_alphabet(void)
 {
