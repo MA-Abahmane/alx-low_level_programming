@@ -26,11 +26,11 @@ printf(",  ");
 }
 else if ((i * (j + 1)) > 100)
 {
-printf(",   ");
+printf(", ");
 }
 else 
 {
-printf(", ");
+printf(",   ");
 }
 }
 }
