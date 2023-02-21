@@ -1,15 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Description: [Print [a..z\n] from another function 10 times]
- *
- * Return: Always 0
- *
- * code by: MAAbahmane
+ * print_alphabet_x10 - print the alphabests 10 times
  */
-
 void print_alphabet_x10(void)
 {
 int h, i;
