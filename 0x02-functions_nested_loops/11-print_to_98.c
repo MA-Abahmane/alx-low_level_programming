@@ -28,7 +28,7 @@ printf(", ");
 }
 num--;
 }
-esle 
+else 
 {
 printf("98");
 }
