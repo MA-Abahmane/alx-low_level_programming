@@ -13,7 +13,9 @@ for (j = 0; j <= 9; j++)
 {
 printf("%d", j * i);
 if ((i * j) != 81)
-  printf(", ")
+{
+ printf(", ");
+}
 }
 putchar('\n');
 }
