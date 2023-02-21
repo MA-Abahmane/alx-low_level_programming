@@ -2,15 +2,8 @@
 #include <ctype.h>
 
 /**
- * main - Entry point
- *
- * Description: [program checks if given char is lower case or upper cased]
- *
- * Return: Always 0
- *
- * code by: MAAbahmane
+ * _islower - find out if letter is upper or lower cased
  */
-
 int _islower(int c)
 {
 if (islower(c))
