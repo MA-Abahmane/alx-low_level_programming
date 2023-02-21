@@ -1,4 +1,4 @@
-//#include "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -7,7 +7,7 @@
  * Return:  the table of numbers
  */
 
-void main(void)
+void naturals(void)
 {
 int i = 0;
 
