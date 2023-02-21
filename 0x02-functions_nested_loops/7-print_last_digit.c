@@ -12,9 +12,18 @@
  */
 int print_last_digit(int m)
 {
-int lst_dig = m % 10;
+int lst_dig, c, i;
 
-_putchar(lst_dig);
+lst_dig = m % 10;
 
-return (lst_dig);
+for (i = 48; i < 58; i++)
+{
+if (_putchar(i) == _putchar(lst_dig))
+{
+c = i;
+}
+}
+_putchar(c);
+  
+return (0);
 }
