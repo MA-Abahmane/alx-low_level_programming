@@ -32,5 +32,5 @@ else
 {
 printf("98");
 }
-_putchar('\n');
+printf("\n");
 }
