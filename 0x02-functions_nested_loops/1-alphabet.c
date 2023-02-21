@@ -1,16 +1,8 @@
 #include "main.h"
-
 /**
- * main.h - Entry point
- *
- * Description: [Print [a..z\n] from another function]
- *
- * Return: None
+ * print_alphabet - print the alphabests
  */
-
-/**
- *code by: MAAbahmane
- */void print_alphabet(void)
+void print_alphabet(void)
 {
 int i;
 
