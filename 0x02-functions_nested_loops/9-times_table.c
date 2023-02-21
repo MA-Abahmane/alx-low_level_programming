@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * jack_bauer - watch numbers
+ * times_table - watch numbers
  */
 void times_table(void)
 {
