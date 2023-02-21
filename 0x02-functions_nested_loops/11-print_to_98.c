@@ -2,8 +2,11 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - start from number given and go to 98
+ * print_to_98 - print numbers untill you get to 98
+ * @num:  given starting number
+ * Return:  lint of numbers from given num the 98
  */
+
 void print_to_98(int num)
 {
 if (num < 98)
