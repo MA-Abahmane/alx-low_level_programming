@@ -8,16 +8,23 @@
  */
 int main(void)
 {
-int i = 0;
+int i, sum3, sum5, all;
+ 
+i = 0
 
 while (i < 1024)
 {
-if (i % 5 == 0 || i % 3 == 0)
+if (i % 5 == 0)
 {
-i = i;
+ sum5 += i;
+}
+if (i % 3 == 0)
+{
+sum3 += i;
 }
 }
-printf("%d", i);
+all = sum5 + sum 3;
+printf("%d", all);
 
 return (0);
 }
