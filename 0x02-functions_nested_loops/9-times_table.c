@@ -12,9 +12,17 @@ for (i = 0; i <= 9; i++)
 for (j = 0; j <= 9; j++)
 {
 printf("%d", j * i);
+
+if ((i * j) < 10 )
+{
 if ((i * j) != 81)
 {
- printf(", ");
+printf(",  ");
+}
+}
+else 
+{
+printf(", ");
 }
 }
 putchar('\n');
