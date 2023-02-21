@@ -30,6 +30,10 @@ printf(", ");
 }
 }
 }
+else if (n == 0)
+{
+printf("%d", n);
+}
 putchar('\n');
 }
 }
