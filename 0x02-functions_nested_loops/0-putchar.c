@@ -5,12 +5,12 @@
  *
  * Description: [The program prints out string with new line]
  *
- * Return: Always 
+ * Return: Always
  *
  * code by MAAbahmane
  */
 int main(void)
 {
 printf("_putchar\n");
-return 0;
+return (0);
 }
