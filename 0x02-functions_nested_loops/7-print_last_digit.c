@@ -15,6 +15,6 @@
 int print_last_digit(int m)
 {
 int lst_dig = m % 10;
-printf("%d", m);
+printf("%d", lst_dig );
 return (0);
 }
