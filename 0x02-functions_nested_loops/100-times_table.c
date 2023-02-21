@@ -24,7 +24,7 @@ if ((i * (j + 1)) >= 10)
 {
 printf(",  ");
 }
-else if ((i * (j + 1)) >= 100)
+else if ((i * (j + 1)) > 90)
 {
 printf(", ");
 }
