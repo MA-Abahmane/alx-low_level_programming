@@ -12,8 +12,9 @@
  */
 
 int _islower(int c)
+char c;
 {
-if (islower(97))
+if (islower(c))
 {
 return (1);
 }
