@@ -7,7 +7,7 @@
  *
  * Return: None
  */
-void print_alphabet(void) /*code by: MAAbahmane*/
+/*code by: MAAbahmane*/void print_alphabet(void)
 {
 int i;
 
