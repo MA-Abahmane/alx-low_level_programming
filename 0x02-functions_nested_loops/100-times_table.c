@@ -1,9 +1,9 @@
-//#include "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
  * print_times_table - print tame table of given num
- * @num:  given num
+ * @n:  given num
  * Return:  the table of numbers
  */
 
@@ -11,27 +11,35 @@ void print_times_table(int n)
 {
 int i, j;
 
-if (n <! 0 || n >! 15)
+if (n > 0 && n < 15)
 {
 for (i = 0; i <= n; i++)
 {
 for (j = 0; j <= n; j++)
 {
 printf("%d", j * i);
-if (j != 9)
+if (j != n)
 {
-if ((i * (j + 1)) < 10)
+if ((i * (j + 1)) > 99)
+{
+printf(", ");
+}
+else if ((i * (j + 1)) > 9)
 {
 printf(",  ");
 }
 else
 {
-printf(", ");
+printf(",   ");
 }
 }
 }
 putchar('\n');
 }
+}
+if (n == 0)
+{
+printf("%d\n", n);
 }
 return;
 }

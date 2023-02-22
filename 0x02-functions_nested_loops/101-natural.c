@@ -1,24 +1,30 @@
-//#include "main.h"
+#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
-
 /**
- * print_times_table - print tame table of given num
- * @num:  given num
- * Return:  the table of numbers
+ * main - Entry point
+ *
+ * Return:  0
  */
-
-void main(void)
+int main(void)
 {
-int i = 0;
+int i, sum3, sum5, all;
+ 
+i = 0
 
 while (i < 1024)
 {
-if (i % 5 == 0 || i % 3 == 0)
+if (i % 5 == 0)
 {
-i = i;
+ sum5 += i;
+}
+if (i % 3 == 0)
+{
+sum3 += i;
 }
 }
-printf("%d", i);
+all = sum5 + sum 3;
+printf("%d", all);
 
-return;
+return (0);
 }
