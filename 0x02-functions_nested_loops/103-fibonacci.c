@@ -7,7 +7,7 @@
 
 int main(void)
 {
-long int i = 1, j = 2, total, evenCount; 
+long int i = 1, j = 2, total, evenCount;
 int count;
 
 count = 0;
@@ -26,6 +26,6 @@ j = total;
 count++;
 }
 
-printf("%ld", evenCount);
-return(0);
+printf("%ld\n", evenCount);
+return (0);
 }
