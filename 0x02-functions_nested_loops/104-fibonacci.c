@@ -13,7 +13,7 @@ int count;
 count = 0;
 
 printf("%lu, %lu, ", i, j);
-while (count <= 98)
+while (count <= 95)
 {
 
 total = i + j;
