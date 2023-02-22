@@ -4,27 +4,21 @@
 /**
  * main - Entry point
  *
- * Return:  0
+ * Return:  Always 0
  */
 int main(void)
 {
-int i, sum3, sum5, all;
- 
-i = 0
+int i, total;
 
-while (i < 1024)
-{
-if (i % 5 == 0)
-{
- sum5 += i;
-}
-if (i % 3 == 0)
-{
-sum3 += i;
-}
-}
-all = sum5 + sum 3;
-printf("%d", all);
+total = 0;
 
+for (i = 0; i < 1024; i++)
+{
+if (i % 5 == 0 || i % 3 == 0)
+{
+total = total + i;
+}
+}
+printf("%d\n", total);
 return (0);
 }
