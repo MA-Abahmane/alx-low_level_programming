@@ -7,7 +7,7 @@
 
 int main(void)
 {
-unsigned long int i = 1, j = 2, total;
+unsigned long long int i = 1, j = 2, total;
 int count;
 
 count = 0;
@@ -22,8 +22,5 @@ i = j;
 j = total;
 count++;
 }
-printf("19740274219868223167, 31940434634990099905, ");
-printf("51680708854858323072, 83621143489848422977, ");
-printf("135301852344706746049, 218922995834555169026\n");
 return (0);
 }
