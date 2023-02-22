@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
-* main - tests function that prints if integer is positive or negative
-* Return: Always 0
-*/
+ * main - tests function that prints if integer is positive or negative
+ * Return: Always 0
+ */
 
 int main(void)
 {
