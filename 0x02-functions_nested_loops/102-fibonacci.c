@@ -7,7 +7,7 @@
 
 int main(void)
 {
-long int i = 1, j = 2, total; 
+long int i = 1, j = 2, total;
 int count;
 
 count = 0;
@@ -19,7 +19,7 @@ while (count < 48)
 total = i + j;
 if (count == 47)
 {
-printf("%lu", total);
+printf("%lu\n", total);
 }
 else
 {
@@ -30,5 +30,5 @@ j = total;
 count++;
 }
 
-return(0);
+return (0);
 }
