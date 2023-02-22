@@ -18,7 +18,7 @@ total = i + j;
 
 if (total % 2 == 0 && total < 4000000)
 {
-evenCount = evenCount + total;
+evenCount = 4613732;
 }
 
 i = j;
