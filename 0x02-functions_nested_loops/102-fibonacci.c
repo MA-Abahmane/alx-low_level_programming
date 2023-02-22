@@ -17,7 +17,14 @@ while (count < 48)
 {
 
 total = i + j;
+if (count == 47)
+{
+printf("%lu", total);
+}
+else
+{
 printf("%lu, ", total);
+}
 i = j;
 j = total;
 count++;
