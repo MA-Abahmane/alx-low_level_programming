@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Return:  0
+ * Return:  Always 0
  */
 int main(void)
 {
@@ -19,6 +19,6 @@ if (i % 5 == 0 || i % 3 == 0)
 total = total + i;
 }
 }
-printf("%d", total);
+printf("%d\n", total);
 return (0);
 }
