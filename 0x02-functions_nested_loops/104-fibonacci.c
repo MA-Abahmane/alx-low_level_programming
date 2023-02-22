@@ -7,17 +7,17 @@
 
 int main(void)
 {
-long int i = 1, j = 2, total;
+long long int i = 1, j = 2, total;
 int count;
   
 count = 0;
 
-printf("%lu, %lu, ", i, j);
+printf("%llu, %llu, ", i, j);
 while (count <= 95)
 {
 
 total = i + j;
-printf("%lu, ", total);
+printf("%llu, ", total);
 i = j;
 j = total;
 count++;
