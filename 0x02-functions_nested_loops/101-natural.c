@@ -18,7 +18,7 @@ if (i % 5 == 0 || i % 3 == 0)
 {
 total = total + i;
 }
-
+}
 printf("%d", total);
 return (0);
 }
