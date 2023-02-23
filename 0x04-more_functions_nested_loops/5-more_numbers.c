@@ -4,7 +4,6 @@
 /**
 * more_numbers - print numbers in range [1..14] 10 times
 *
-* Return: 0 alltimes
 */
 
 void more_numbers(void)
@@ -29,5 +28,4 @@ putchar(j);
 putchar('\n');
 k++;
 }
-return;
 }
