@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
-* _isdigit - find out if the int c is a number
-* @c: given int
-* Return: 0 alltimes
+* print_numbers - print numbers in reange [0..9]
+* 
+* Return: None
 */
 
 void print_numbers(void)
