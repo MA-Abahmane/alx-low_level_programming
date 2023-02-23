@@ -5,41 +5,20 @@
  * @n : given number
  * Return: None
  */
-void print_number(int n)
+int main()
 {
-long m; /* power of 10 */
-int c; /* boolean check */
-long num; /* convert int to long */
+int n = -44;
+unsigned int num = n;
 
-num = n;
-
-if (num < 0)
+if (n < 0)
 {
-num *= -1;
-_putchar('-');
+num = -num;
+putchar('-');
 }
-
-m = 1;
-c = 1;
-while (c)
+if (0 < (num / 10))
 {
-if (num / (m * 10) > 0)
-m *= 10;
-else
-c = 0;
+printf("%d", num / 10);
 }
-
-while (num >= 0)
-{
-if (m == 1)
-{
-_putchar(num % 10 + '0');
-num = -1;
-}
-else
-{
-_putchar((num / m % 10) + '0');
-m /= 10;
-}
-}
+putchar((num % 10) + '0');
+return (0);
 }
