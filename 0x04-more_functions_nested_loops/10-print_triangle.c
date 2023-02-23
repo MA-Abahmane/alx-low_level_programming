@@ -6,7 +6,7 @@
  * Return: None
  */
 
-void print_triangle(int size)
+int print_triangle(int size)
 {
 int a, b, c, i, j, h;
 
@@ -30,5 +30,6 @@ c++;
 
 if (size <= 0)
 putchar('\n');
+return(0);
 }
 
