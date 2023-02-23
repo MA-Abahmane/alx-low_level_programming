@@ -5,7 +5,7 @@
 /**
 * print_diagonal - print half a piramid
 * @n: given hight of the piramid
-* Return: 0 alltimes
+* Return: None
 */
 
 void print_diagonal(int n)
@@ -33,3 +33,4 @@ if (n <= 0)
 putchar('\n');
 
 return;
+}
