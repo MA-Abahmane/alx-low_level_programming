@@ -14,12 +14,14 @@ if (isupper(c))
 {
 _putchar(c);
 _putchar(':');
+_putchar(' ');
 _putchar('1');
 }
 else if (islower(c))
 {
 _putchar(c);
 _putchar(':');
+_putchar(' ');
 _putchar('0');
 }
 else
