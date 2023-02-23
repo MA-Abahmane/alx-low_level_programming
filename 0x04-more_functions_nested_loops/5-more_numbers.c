@@ -13,7 +13,7 @@ int i, j, k;
 
 k = 0;
 
-while (k <= 10)
+while (k < 10)
 {
 for (i = 48; i < 50; i++)
 {
