@@ -17,13 +17,13 @@ m = 0;
 
 while (m < n)
 {
-putchar('_');
+_putchar('_');
 m++;
 }
 }
 else
 {
-putchar('\n');
+_putchar('\n');
 }
 return;
 }
