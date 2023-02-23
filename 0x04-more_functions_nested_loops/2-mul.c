@@ -3,8 +3,9 @@
 #include "main.h"
 
 /**
-* _isdigit - find out if the int c is a number
-* @c: given int
+* mul - multiplie 2 given numbers
+* @a: 1st given int
+* @b: 2st given int
 * Return: 0 alltimes
 */
 
@@ -14,6 +15,6 @@ int multi;
 
 multi = a * b;
 printf("%d", multi);
- 
+
 return (multi);
 }
