@@ -6,7 +6,7 @@
  * @n : given number
  * Return: None
  */
-void print_number(int n);
+void print_number(int n)
 {
 unsigned int num = n;
 
@@ -20,5 +20,6 @@ if (0 < (num / 10))
 printf("%d", num / 10);
 }
 putchar((num % 10) + '0');
+
 return;
 }
