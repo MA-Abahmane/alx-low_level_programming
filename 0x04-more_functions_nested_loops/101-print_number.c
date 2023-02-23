@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-unsigned int num = n;
+long int num = n;
 
 if (n < 0)
 {
@@ -20,7 +20,5 @@ if (0 < (num / 10))
 {
 printf("%d", num / 10);
 }
-
 putchar((num % 10) + '0');
-return;
 }
