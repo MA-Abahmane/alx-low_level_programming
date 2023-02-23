@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <ctype.h>
 #include "main.h"
 
 /**
-* print_most_numbers - print '_' times the given number n
+* print_line - print '_' times the given number n
 * @n: given times to print '_'
-* Return: 0 alltimes
+* Return: None
 */
 
 void print_line(int n)
@@ -18,7 +17,7 @@ m = 0;
 
 while (m < n)
 {
-_putchar('_');
+putchar('_');
 m++;
 }
 }
