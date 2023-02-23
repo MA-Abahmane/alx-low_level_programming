@@ -17,17 +17,17 @@ for (i = 0; i < size; i++)
 {
 for (j = 0; j < b-1; j++)
 {
-_putchar(' ');
+putchar(' ');
 }
 for (h = 0; h <= c; h++)
 {
-_putchar('#');
+putchar('#');
 }
-_putchar('\n');
+putchar('\n');
 b--;
 c++;
 }
 
 if (size <= 0)
-_putchar('\n');
+putchar('\n');
 }
