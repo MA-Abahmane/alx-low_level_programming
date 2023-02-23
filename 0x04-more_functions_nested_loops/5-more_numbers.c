@@ -2,15 +2,6 @@
 #include "main.h"
 
 /**
-* more_numbers - print numbers in range [1..14] 10 times
-*
-*/
-
-#include <stdio.h>
-#include "main.h"
-#include <stdio.h>
-
-/**
 * print_numbers - print numbers in reange [0..14] 10 times
 * 
 * Return: None
