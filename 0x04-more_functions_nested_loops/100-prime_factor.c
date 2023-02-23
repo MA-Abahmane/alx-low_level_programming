@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-unsigned int num = 612852475143;
+unsigned long num = 612852475143;
 long int i;
 
 for (i = (int) sqrt(num); i > 2; i++)
