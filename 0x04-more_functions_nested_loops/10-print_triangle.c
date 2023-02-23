@@ -14,7 +14,7 @@ c = 0;
 
 for (i = 0; i < size; i++)
 {
-for (j = 0; j < b-1; j++)
+for (j = 0; j < b - 1; j++)
 {
 putchar(' ');
 }
