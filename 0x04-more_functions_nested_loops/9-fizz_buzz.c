@@ -1,13 +1,13 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * print_square - The program that prints the numbers from 1 to 100, followed by a new line. But for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz. 
+ * main - The program that prints the numbers from 1 to 100, followed by a new line. But for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz. 
  *
  * Return: None
  */
 
-void main()
+int main(void)
 {
 int i;
 
@@ -37,4 +37,5 @@ else
 printf("%d ", i);
 }
 }
+return(0);
 }
