@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
-* print_numbers - print numbers in reange [0..14] 10 times
-* 
+* more_numbers - print numbers in reange [0..14] 10 times
+*1
 * Return: None
 */
 
-void more_numbers(void);
+void more_numbers(void)
 {
 int i, j, k;
 
