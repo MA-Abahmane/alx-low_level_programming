@@ -3,7 +3,7 @@
 
 /**
 * print_numbers - print numbers in reange [0..9]
-* 
+*
 * Return: None
 */
 
