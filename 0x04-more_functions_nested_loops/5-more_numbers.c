@@ -6,7 +6,17 @@
 *
 */
 
-void more_numbers(void)
+#include <stdio.h>
+#include "main.h"
+#include <stdio.h>
+
+/**
+* print_numbers - print numbers in reange [0..14] 10 times
+* 
+* Return: None
+*/
+
+void more_numbers(void);
 {
 int i, j, k;
 
@@ -16,8 +26,12 @@ while (k <= 10)
 {
 for (i = 48; i < 50; i++)
 {
-for (j = 48; j < 53; j++)
+for (j = 48; j < 58; j++)
 {
+if (i == 49 && j == 53)
+{
+break;
+}
 if (i != '0')
 {
 putchar(i);
