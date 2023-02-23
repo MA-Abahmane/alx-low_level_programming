@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - print a triangle
+ * print_triangle - print a triangle
  * @size: hight and withs of triangle
  * Return: None
  */
@@ -32,7 +32,6 @@ c++;
 if (size <= 0)
 {
 putchar('\n');
-}
 }
 }
 
