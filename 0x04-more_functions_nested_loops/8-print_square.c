@@ -15,7 +15,8 @@ if (size > 0)
 {
 a = 0;
 
-while (a < size){
+while (a < size)
+{
 b = 0;
 
 while (b < size)
