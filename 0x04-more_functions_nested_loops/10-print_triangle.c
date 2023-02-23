@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -30,8 +29,8 @@ c++;
 }
 
 if (size <= 0)
-{
 putchar('\n');
-}
+  
+return;
 }
 
