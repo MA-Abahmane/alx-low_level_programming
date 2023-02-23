@@ -1,14 +1,12 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include <main.h>
 
 /**
- * print_triangle - print a triangle
+ * print_triangle - print a triangle using '#'
  * @size: hight and withs of triangle
  * Return: None
  */
 
-int print_triangle(int size)
+void print_triangle(int size)
 {
 int a, b, c, i, j, h;
 
@@ -19,18 +17,17 @@ for (i = 0; i < size; i++)
 {
 for (j = 0; j < b-1; j++)
 {
-putchar(' ');
+_putchar(' ');
 }
 for (h = 0; h <= c; h++)
 {
-putchar('#');
+_putchar('#');
 }
-putchar('\n');
+_putchar('\n');
 b--;
 c++;
 }
 
 if (size <= 0)
-putchar('\n');
-return(0);
+_putchar('\n');
 }
