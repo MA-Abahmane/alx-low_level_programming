@@ -23,7 +23,10 @@ putchar(' ');
 --l;
 }
 putchar('\\');
+if (n != 1)
+{
 putchar('\n');
+}
 n--;
 m++;
 }
