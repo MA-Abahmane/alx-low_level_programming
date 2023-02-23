@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <ctype.h>
 #include "main.h"
 
 /**
-* print_most_numbers - print numbers in range [1..14] 10 times
+* more_numbers - print numbers in range [1..14] 10 times
 *
 * Return: 0 alltimes
 */
@@ -30,6 +29,5 @@ putchar(j);
 putchar('\n');
 k++;
 }
-
 return;
 }
