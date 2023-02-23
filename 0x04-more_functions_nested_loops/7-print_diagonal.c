@@ -20,10 +20,10 @@ l = m;
 
 while (l > 0)
 {
-putchar(32);
-l--;
+putchar(' ');
+--l;
 }
-putchar(92);
+putchar('\\');
 putchar('\n');
 n--;
 m++;
