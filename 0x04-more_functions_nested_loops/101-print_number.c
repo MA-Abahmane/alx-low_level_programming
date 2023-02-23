@@ -7,16 +7,39 @@
  */
 void print_number(int n)
 {
-long num = n;
+long m; /* power of 10 */
+int c; /* boolean check */
+long num; /* convert int to long */
 
-if (n < 0)
+num = n;
+
+if (num < 0)
 {
-num = -num;
-putchar('-');
+num *= -1;
+_putchar('-');
 }
-if (0 < (num / 10))
+
+m = 1;
+c = 1;
+while (c)
 {
-printf("%d", num / 10);
+if (num / (m * 10) > 0)
+m *= 10;
+else
+c = 0;
 }
-putchar((num % 10) + '0');
+
+while (num >= 0)
+{
+if (m == 1)
+{
+_putchar(num % 10 + '0');
+num = -1;
+}
+else
+{
+_putchar((num / m % 10) + '0');
+m /= 10;
+}
+}
 }
