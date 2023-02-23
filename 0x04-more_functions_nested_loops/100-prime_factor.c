@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdlib.h>
 
 /**
  * main - print the factor of the number 612852475143
