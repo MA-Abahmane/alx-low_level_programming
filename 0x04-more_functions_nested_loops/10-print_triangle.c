@@ -2,35 +2,32 @@
 
 /**
  * print_triangle - print a triangle
- * @size: hight and withs of triangle
- * Return: None
+ * @size: Size of the triangle
  */
-
 void print_triangle(int size)
 {
-int a, b, c, i, j, h;
+	int c, i, j;
 
-b = size;
-c = 0;
+	c = 0;
+	i = size - 1;
+	while (c < size)
+	{
+		i = size - 1 - c;
+		j = c + 1;
+		while (i > 0)
+		{
+			_putchar(' ');
+			i--;
+		}
+		while (j > 0)
+		{
+			_putchar('#');
+			j--;
+		}
+		_putchar('\n');
+		c++;
+	}
 
-for (i = 0; i < size; i++)
-{
-for (j = 0; j < b-1; j++)
-{
-putchar(' ');
+	if (size <= 0)
+		_putchar('\n');
 }
-for (h = 0; h <= c; h++)
-{
-putchar('#');
-}
-putchar('\n');
-b--;
-c++;
-}
-
-if (size <= 0)
-putchar('\n');
-  
-return;
-}
-
