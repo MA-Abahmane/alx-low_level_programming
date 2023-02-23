@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
-* print_diagonal - print a triangle
-* @size: hight and withs of triangle
-* Return: None
-*/
+ * print_diagonal - print a triangle
+ * @size: hight and withs of triangle
+ * Return: None
+ */
 
 void print_triangle(int size)
 {
