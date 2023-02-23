@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
-* main - find out if the char c is uppercase
+* _isupper - find out if the char c is uppercase
 * @c: given car
 * Return: 0 alltimes
 */
@@ -28,6 +28,5 @@ _putchar(c);
 _putchar(':');
 _putchar('0');
 }
-
 return (0);
 }
