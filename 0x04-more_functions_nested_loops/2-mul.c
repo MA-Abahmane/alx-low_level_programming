@@ -14,7 +14,5 @@ int mul(int a, int b)
 int multi;
 
 multi = a * b;
-printf("%d", multi);
-
 return (multi);
 }
