@@ -25,7 +25,7 @@ else if (i % 5 == 0)
 {
 if (i == 100)
 {
-printf("Buzz"); 
+printf("Buzz");
 }
 else
 {
