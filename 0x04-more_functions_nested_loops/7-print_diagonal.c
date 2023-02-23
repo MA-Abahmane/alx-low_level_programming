@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 #include "main.h"
 
 /**
@@ -31,6 +30,4 @@ m++;
 
 if (n <= 0)
 putchar('\n');
-
-return;
 }
