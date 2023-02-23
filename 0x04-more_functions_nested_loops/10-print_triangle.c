@@ -1,4 +1,5 @@
-#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_triangle - print a triangle
@@ -32,4 +33,3 @@ if (size <= 0)
 putchar('\n');
 return(0);
 }
-
