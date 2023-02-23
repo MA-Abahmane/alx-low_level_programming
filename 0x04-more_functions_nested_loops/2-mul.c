@@ -8,7 +8,6 @@
 * @b: 2st given int
 * Return: 0 alltimes
 */
-
 int mul(int a, int b)
 {
 int multi;
