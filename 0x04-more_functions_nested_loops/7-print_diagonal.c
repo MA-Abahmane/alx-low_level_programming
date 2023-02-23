@@ -17,7 +17,7 @@ m = 0;
 while (n > 0)
 {
 l = m;
-    
+
 while (l > 0)
 {
 putchar(32);
