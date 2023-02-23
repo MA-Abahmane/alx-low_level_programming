@@ -7,11 +7,10 @@
  *
  * Return: None
  */
-
 int main(void)
 {
 unsigned long num = 612852475143;
-int i;
+long int i;
 
 for (i = (int) sqrt(num); i > 2; i++)
 {
