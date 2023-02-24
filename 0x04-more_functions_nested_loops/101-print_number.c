@@ -16,7 +16,7 @@ print_number(num / 10);
 if (n < 0)
 {
 _putchar(45);
-num = -i;
+num = -num;
 }
 
 _putchar(num % 10 + 48);
