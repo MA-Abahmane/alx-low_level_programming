@@ -11,7 +11,7 @@ unsigned int num = n;
 
 if (num / 10)
 {
-_print_number(num / 10);
+print_number(num / 10);
 }
 if (n < 0)
 {
