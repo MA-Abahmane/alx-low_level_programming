@@ -4,22 +4,21 @@
 /**
  * print_number - print the number given
  * @n : given number
- *
- *
  */
 void print_number(int n)
 {
-	unsigned int i = n;
+unsigned int num = n;
 
-	if (n < 0)
-	{
-		putchar(45);
-		i = -i;
-	}
-	if (i / 10)
-	{
-		print_number(i / 10);
-	}
-	putchar(i % 10 + '0');
-	return;
+if (num / 10)
+{
+_print_number(num / 10);
+}
+if (n < 0)
+{
+_putchar(45);
+num = -i;
+}
+
+_putchar(num % 10 + 48);
+return;
 }
