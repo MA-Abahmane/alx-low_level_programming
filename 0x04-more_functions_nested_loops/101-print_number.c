@@ -7,7 +7,7 @@
  */
 void print_number(int n)
 {
-int num = n;
+unsigned int num;
 
 if (num / 10)
 {
@@ -15,10 +15,13 @@ print_number(num / 10);
 }
 if (n < 0)
 {
-putchar(45);
-num = -num;
+putchar('-');
+num = -n;
+}
+else
+{
+num = n;
 }
 
-putchar(num % 10 + 48);
-return;
+putchar((num % 10) + '0');
 }
