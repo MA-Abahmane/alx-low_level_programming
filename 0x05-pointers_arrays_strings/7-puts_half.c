@@ -19,7 +19,7 @@ s++;
 count++;
 }
 
-j = (count-1);
+j = (count);
 for(i = 0; i <= j; i++)
 {
 if (i >= (j + 1) / 2)
