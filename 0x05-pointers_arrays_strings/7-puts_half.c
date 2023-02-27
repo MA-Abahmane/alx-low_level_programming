@@ -26,6 +26,10 @@ if (i >= count / 2)
 {
 printf("%c", str[i]);
 }
+if (i >= count / 2 == 70)
+{
+printf("\\\");
+}
 }
 putchar('\n');
 }
