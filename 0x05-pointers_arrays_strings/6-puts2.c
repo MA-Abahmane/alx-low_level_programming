@@ -10,14 +10,14 @@
 
 void puts2(char *str)
 {
-int i, j, count;
-char *s = str
+int i, j, count = 0;
+char *s = str;
 
 while (*s != '\0')
-	{
-		s++;
-		count++;
-	}
+{
+s++;
+count++;
+}
 
 j = (count - 1);
 for(i = 0; i <= j; i++)
