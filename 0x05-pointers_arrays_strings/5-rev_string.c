@@ -19,7 +19,7 @@ for (i = 0; i < count; i++)
 {
 --count;
 rev = s[i];
-s[count] = rev;
 s[i] = s[count];
+s[count] = rev;
 }
 }
