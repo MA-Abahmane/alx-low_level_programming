@@ -12,7 +12,7 @@ int _atoi(char *s)
 int i, j, f, x, len, num;
 len = 0, num = 0;
 while (s[len] != '\0')
-  len++;
+len++;
 i = 0, f = 0, j = 0, x = 0;
 while (i < len && f == 0)
 {
@@ -22,7 +22,7 @@ if (s[i] >= 48 && s[i] <= 58)
 {
 num = s[i] - 48;
 if (j % 2)
-  num = -num;
+num = -num;
 x = x * 10 + num;
 f = 1;
 if (s[i + 1] < 48 || s[i + 1] > 58)
