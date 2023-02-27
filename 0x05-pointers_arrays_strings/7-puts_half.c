@@ -22,17 +22,12 @@ count++;
 j = (count - 1);
 for (i = 0; i <= j; i++)
 {
-if (count > 20)
-{
+
 if (i > count / 2)
 {
 printf("%c", str[i]);
 }
-}
-else
-{
-(i >= count / 2)
-}
+
 }
 putchar('\n');
 }
