@@ -19,8 +19,8 @@ s++;
 count++;
 }
 
-j = (count-1);
-for(i = 0; i <= j; i++)
+j = (count - 1);
+for (i = 0; i <= j; i++)
 {
 if (i >= count / 2)
 {
