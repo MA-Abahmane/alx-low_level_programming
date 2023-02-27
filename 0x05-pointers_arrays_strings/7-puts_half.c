@@ -24,7 +24,7 @@ for (i = 0; i <= j; i++)
 {
 if (i >= count / 2)
 {
-printf("%s", str[i]);
+printf("%c", str[i]);
 }
 }
 putchar('\n');
