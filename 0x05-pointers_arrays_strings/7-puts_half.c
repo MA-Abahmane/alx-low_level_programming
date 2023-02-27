@@ -20,6 +20,7 @@ count++;
 }
 
 j = (count - 1);
+printf("%c", 'o');
 for (i = 0; i <= j; i++)
 {
 if (i >= count / 2)
