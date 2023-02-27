@@ -7,37 +7,37 @@
  * @s: given string
  * Return: None
  */
-void rev_string(char *s);
-int main(void)
+void reverse(char* begin, char* end)
 {
-	char s[11] = "Holberton!";
-
-	printf("%s\n", s);
-	rev_string(s);
-	printf("%s\n", s);
-	return (0);
+    char temp;
+    while (begin < end) {
+        temp = *begin;
+        *begin++ = *end;
+        *end-- = temp;
+    }
 }
-
-
-void rev_string(char *s)
+ 
+// Function to reverse words*/
+void rev_string(char* s)
 {
-char rev[9000];
-int i, j, count = 0;
-
-while (s[count])
-{
-count++;
-}
-j = count - 1;
-
-for (i = 0; i < count; i++) 
-{
-rev[i] = s[j];
---j;
-}
-
-for (i = 0; i <= strlen(s); i++)
-{
-s[i] = rev[i];
-}
+    char* word_begin = s;
+ 
+    // Word boundary
+    char* temp = s;
+ 
+    // Reversing individual words as
+    // explained in the first step
+    while (*temp) {
+        temp++;
+        if (*temp == '\0') {
+            reverse(word_begin, temp - 1);
+        }
+        else if (*temp == ' ') {
+            reverse(word_begin, temp - 1);
+            word_begin = temp + 1;
+        }
+    }
+ 
+    // Reverse the entire string
+    reverse( temp - 1, s);
 }
