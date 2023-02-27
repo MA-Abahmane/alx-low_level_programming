@@ -7,20 +7,10 @@
  * @s: given string
  * Return: None
  */
-void reverse(char* begin, char* end)
-{
-char temp;
-while (begin < end) {
-temp = *begin;
-*begin++ = *end;
-*end-- = temp;
-}
-}
-
 void rev_string(char* s)
 {
-char* word_begin = s;
-char* temp = s;
+char *word_begin = s;
+char *temp = s;
 
 while (*temp) {
 temp++;
@@ -33,4 +23,14 @@ word_begin = temp + 1;
 }
 }
 reverse( temp - 1, s);
+}
+
+void reverse(char *begin, char *end)
+{
+char temp;
+while (begin < end) {
+temp = *begin;
+*begin++ = *end;
+*end-- = temp;
+}
 }
