@@ -10,9 +10,17 @@
 
 void puts_half(char *str)
 {
-int i;
+int i, j, count = 0;
+char *s = str;
 
-for(i = 0; i <= (strlen(str)-1); i++)
+while (*s != '\0')
+{
+s++;
+count++;
+}
+
+j = (count-1);
+for(i = 0; i <= ; i++)
 {
 if (i >= strlen(str) / 2)
 {
