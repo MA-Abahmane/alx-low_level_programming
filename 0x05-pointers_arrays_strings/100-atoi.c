@@ -23,9 +23,7 @@ if (s[i] >= 48 && s[i] <= 58)
 {
 num = s[i] - 48;
 if (j % 2)
-{
-num = -num;
-}
+  num = -num;
 x = x * 10 + num;
 f = 1;
 if (s[i + 1] < 48 || s[i + 1] > 58)
