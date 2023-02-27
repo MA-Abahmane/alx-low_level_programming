@@ -20,7 +20,7 @@ count++;
 }
 
 j = (count - 1);
-for (i = 0; i < j; i++)
+for (i = 1; i <= j; i++)
 {
 if (i >= count / 2)
 {
