@@ -10,9 +10,16 @@
 
 void puts2(char *str)
 {
-int i, j;
-int j = (strlen(str)-1);
+int i, j, count;
+char *s = str
 
+while (*s != '\0')
+	{
+		s++;
+		count++;
+	}
+
+j = (count - 1);
 for(i = 0; i <= j; i++)
 {
 if (i % 2 == 0)
