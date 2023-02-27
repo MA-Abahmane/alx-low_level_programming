@@ -2,19 +2,30 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define LENGTH 30 
-#define CHARS "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{};':\"\\|,.<>/?`~" // characters to use in the password
+/**
+ * main - make a random password
+ *
+ * Return: 0
+ */
 
-int main() {
-    srand(time(NULL)); 
-    char password[LENGTH + 1]; 
+int main(void)
+{
+int i, j, num = 0;
+int pass[1000];	
 
-    for (int i = 0; i < LENGTH; i++) {
-        password[i] = CHARS[rand() % (sizeof(CHARS) - 1)]; 
-
-    password[LENGTH] = '\0'; 
-
-    printf("%s", password); 
-
-    return 0;
+srand(time(NULL));
+for (i = 0; i < 100; i++)
+{
+pass[i] = rand() % 78;
+num += (pass[i] + '0');
+putchar(pass[i] + '0');
+if ((2772 - num) - '0' < 78)
+{
+j = 2772 - num - '0';
+num += j;
+putchar(j + '0');
+break;
+}
+}
+return (0);
 }
