@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_number - print the number given
  * @n : given number
@@ -10,7 +10,7 @@ unsigned int num;
 
 if (n < 0)
 {
-_putchar('-');
+putchar('-');
 num = -n;
 }
 else
@@ -23,5 +23,5 @@ if (num / 10)
 print_number(num / 10);
 }
 
-_putchar((num % 10) + 48);
+putchar((num % 10) + 48);
 }
