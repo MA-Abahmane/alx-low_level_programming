@@ -19,9 +19,9 @@ for (i = 0; i < 100; i++)
 pass[i] = rand() % 78;
 num += (pass[i] + '0');
 putchar(pass[i] + '0');
-if ((2772 - num) - '0' < 78)
+if ((2770 - num) - '0' < 78)
 {
-j = 2772 - num - '0';
+j = 2770 - num - '0';
 num += j;
 putchar(j + '0');
 break;
