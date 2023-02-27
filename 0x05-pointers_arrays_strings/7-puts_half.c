@@ -26,7 +26,7 @@ if (i > count / 2 && count > 20)
 {
 printf("%c", str[i]);
 }
-else (i >= count / 2 )
+else
 {
 printf("%c", str[i]);
 }
