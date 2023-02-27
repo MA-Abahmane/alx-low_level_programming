@@ -1,22 +1,43 @@
 #include <stdio.h>
 #include <string.h>
-#include "main.h"
+//#include "main.h"
 
 /**
  * rev_string - a function that prints a string, followed by a new line.
  * @s: given string
  * Return: None
  */
+void rev_string(char *s);
+int main(void)
+{
+	char s[11] = "Holberton!";
+
+	printf("%s\n", s);
+	rev_string(s);
+	printf("%s\n", s);
+	return (0);
+}
+
 
 void rev_string(char *s)
 {
-int i;
+char rev[9000];
+int i, j, count = 0;
 
-for(i = (strlen(s)-1); i >= 0; i--)
+while (s[count])
 {
-printf("%c", s[i]);
-if (i < 0)
-  break;
+count++;
 }
-putchar('\n');
+j = count - 1;
+
+for (i = 0; i < count; i++) 
+{
+rev[i] = s[j];
+--j;
+}
+
+for (i = 0; i < 11; i++)
+{
+s[i] = rev[i];
+}
 }
