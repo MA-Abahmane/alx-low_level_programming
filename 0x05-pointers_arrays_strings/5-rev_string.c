@@ -7,30 +7,19 @@
  * @s: given string
  * Return: None
  */
-void rev_string(char* s)
+void rev_string(char *s)
 {
-char *word_begin = s;
-char *temp = s;
-
-while (*temp) {
-temp++;
-if (*temp == '\0') {
-reverse(word_begin, temp - 1);
-}
-else if (*temp == ' ') {
-reverse(word_begin, temp - 1);
-word_begin = temp + 1;
-}
-}
-reverse( temp - 1, s);
-}
-
-void reverse(char *begin, char *end)
+int i;
+char rev = s[0];
+int count = 0;
+  
+while (s[count] != '\0')
+count++;
+for (i = 0; i < count; i++)
 {
-char temp;
-while (begin < end) {
-temp = *begin;
-*begin++ = *end;
-*end-- = temp;
+--count;
+rev = s[i];
+s[i] = s[count];
+s[count] = rev;
 }
 }
