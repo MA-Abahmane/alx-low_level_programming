@@ -16,13 +16,13 @@ while (*(src + i) != '\0')
 {
 i++;
 }
+dest[i] = '\0';
 
 for (j = 0; j < i ; j++)
 {
 dest[j] = src[j];
 }
 
-dest[i] = '\0';
 return (dest);
 }
 
