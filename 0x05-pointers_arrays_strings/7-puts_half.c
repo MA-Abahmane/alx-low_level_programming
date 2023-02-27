@@ -20,9 +20,9 @@ count++;
 }
 
 j = (count - 1);
-for (i = 1; i <= j; i++)
+for (i = 0; i <= j; i++)
 {
-if (i >= count / 2)
+if (i > count / 2)
 {
 printf("%c", str[i]);
 }
