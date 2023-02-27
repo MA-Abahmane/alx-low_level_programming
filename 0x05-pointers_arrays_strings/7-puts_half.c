@@ -20,15 +20,11 @@ count++;
 }
 
 j = (count - 1);
-for (i = 0; i <= j; i++)
+for (i = 0; i < j; i++)
 {
 if (i >= count / 2)
 {
 printf("%c", str[i]);
-}
-if ((count / 2) == 70)
-{
-printf("%s","\\\");
 }
 }
 putchar('\n');
