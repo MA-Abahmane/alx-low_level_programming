@@ -22,9 +22,9 @@ putchar(pass[i] + 48);
 
 if ((2772 - num) - 48 < 78)
 {
-num += j;
 j = 2772 - num - 48;
 putchar(j + 48);
+num += j;
 break;
 }
 }
