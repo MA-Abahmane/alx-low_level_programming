@@ -19,3 +19,4 @@ printf("%c", s[i]);
 }
 putchar('\n');
 }
+
