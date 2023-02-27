@@ -36,7 +36,7 @@ rev[i] = s[j];
 --j;
 }
 
-for (i = 0; i <= (strlen(s) - 1); i++)
+for (i = 0; i <= strlen(s); i++)
 {
 s[i] = rev[i];
 }
