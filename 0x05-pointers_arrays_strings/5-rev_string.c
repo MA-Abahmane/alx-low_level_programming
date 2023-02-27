@@ -15,7 +15,8 @@ int i;
 for(i = (strlen(s)-1); i >= 0; i--)
 {
 printf("%c", s[i]);
+if (i < 0)
+  break;
 }
 putchar('\n');
-break;
 }
