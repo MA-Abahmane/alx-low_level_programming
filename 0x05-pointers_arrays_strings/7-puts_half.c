@@ -22,7 +22,7 @@ count++;
 j = (count-1);
 for(i = 0; i <= j; i++)
 {
-if (i >= strlen(str) / 2)
+if (i >= (j + 1) / 2)
 {
 printf("%c", str[i]);
 }
