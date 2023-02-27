@@ -19,10 +19,10 @@ s++;
 count++;
 }
 
-j = (count);
+j = (count-1);
 for(i = 0; i <= j; i++)
 {
-if (i >= (j + 1) / 2)
+if (i >= count / 2)
 {
 printf("%c", str[i]);
 }
