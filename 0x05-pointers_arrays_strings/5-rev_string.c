@@ -16,17 +16,16 @@ void reverse(char* begin, char* end)
         *end-- = temp;
     }
 }
- 
-// Function to reverse words*/
+
 void rev_string(char* s)
 {
     char* word_begin = s;
  
-    // Word boundary
+
     char* temp = s;
  
-    // Reversing individual words as
-    // explained in the first step
+   
+ 
     while (*temp) {
         temp++;
         if (*temp == '\0') {
@@ -37,7 +36,5 @@ void rev_string(char* s)
             word_begin = temp + 1;
         }
     }
- 
-    // Reverse the entire string
     reverse( temp - 1, s);
 }
