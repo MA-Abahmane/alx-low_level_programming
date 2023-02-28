@@ -1,5 +1,6 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
+
 /**
  * print_number - print the number given
  * @n : given number
@@ -14,14 +15,10 @@ putchar('-');
 num = -n;
 }
 else
-{
 num = n;
-}
 
 if (num / 10)
-{
 print_number(num / 10);
-}
 
-putchar((num % 10) + 48);
+putchar((num % 10) + '0');
 }
