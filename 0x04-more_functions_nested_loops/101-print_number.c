@@ -24,4 +24,3 @@ print_number(num / a);
 
 _putchar((num % a) + 48);
 }
-
