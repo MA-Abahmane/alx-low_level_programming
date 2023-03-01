@@ -7,7 +7,7 @@
  * @dest: 1st given string
  * @src:  2end given string
  * @n: given Index number
- * Return : return the copyed string
+ * Return: return the copyed string
  */
 
 char *_strncpy(char *dest, char *src, int n)
