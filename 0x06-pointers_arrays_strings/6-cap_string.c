@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h> 
+#include <ctype.h>
 #include "main.h"
 
 /**
@@ -18,7 +18,12 @@ j = 0;
 while (str[j] != '\0')
 {
 
-if (str[j - 1] == ' ' || str[j - 1] == '.' || str[j - 1] == '\n' || str[j - 1] == '\t')
+if (str[j - 1] == ' ' || str[j - 1] == '.')
+{
+str[j] = toupper(str[j]);
+}
+
+else if (str[j - 1] == '\n' || str[j - 1] == '\t')
 {
 str[j] = toupper(str[j]);
 }
@@ -27,6 +32,7 @@ else
 {
 str[j] = str[j];
 }
+
 ++j;
 }
 
