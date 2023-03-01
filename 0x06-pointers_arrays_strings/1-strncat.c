@@ -7,7 +7,7 @@
  * @dest: 1st given string
  * @src:  2end given string
  * @n: given Index number
- * Return : return the result of the concatination
+ * Return: return the result of the concatination
  */
 
 char *_strncat(char *dest, char *src, int n)
