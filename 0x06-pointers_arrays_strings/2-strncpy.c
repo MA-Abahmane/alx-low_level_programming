@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * *_strncpy -  a function that copies a string.
+ * _strncpy -  a function that copies a string.
  * @dest: 1st given string
  * @src:  2end given string
  * @n: given Index number
