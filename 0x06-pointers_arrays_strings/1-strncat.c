@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * *_strncat - concat 2 given strings using 'strncat()' and return the result
+ * _strncat - concat 2 given strings using 'strncat()' and return the result
  * @dest: 1st given string
  * @src:  2end given string
  * @n: given Index number
