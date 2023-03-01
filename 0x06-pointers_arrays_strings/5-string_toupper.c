@@ -6,7 +6,7 @@
 /**
  * string_toupper - function that changes lowercase to uppercase.
  * @str: given string
- * Return : return the compared tring resulte
+ * Return: return the compared tring resulte
  */
 
 char *string_toupper(char *str)
