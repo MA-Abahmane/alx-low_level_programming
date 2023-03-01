@@ -8,7 +8,6 @@
  * @src:  2end given string
  * Return : return the result of concatination
  */
-
 char *_strcat(char *dest, char *src)
 {
 char *str;
