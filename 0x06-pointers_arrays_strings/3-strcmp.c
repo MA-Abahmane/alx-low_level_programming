@@ -15,5 +15,5 @@ int result;
 printf("", s1);
 
 result = strcmp(s1, s2);
-return result;
+return (result);
 }
