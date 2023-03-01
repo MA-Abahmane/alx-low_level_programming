@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * reverse_array -  a function that reverses the content of an array of integers.
+ * reverse_array - a function that reverses arrays integers.
  * @a: given array
  * @n:  array size
  * Return : return the compared tring resulte
