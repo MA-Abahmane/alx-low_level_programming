@@ -14,5 +14,5 @@ char *_strcat(char *dest, char *src)
 char *str;
 
 str = strcat(dest, src);
-return str;
+return (str);
 }
