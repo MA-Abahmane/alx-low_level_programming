@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 #include "main.h"
 
 /**
@@ -11,8 +10,7 @@
 
 char *string_toupper(char *str)
 {
-int j, arrSize;
-char *s;
+int j;
 
 j = 0;
 while (str[j] != '\0')
