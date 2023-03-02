@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
  * reverse_array - a function that reverses arrays integers.
  * @a: given array
  * @n:  array size
- * Return : return the compared tring resulte
+ * Return: None
  */
 
 void reverse_array(int *a, int n)
@@ -25,5 +24,4 @@ else
 printf("%d, ", num);
 }
 }
-return;
 }
