@@ -5,7 +5,7 @@
  * print_buffer - a function that prints a buffer.
  * @b: given buffer
  * @size: size of the buffer b
- * Return: return the result of the concatination
+ * Return: None
  */
 
 void print_buffer(char *b, int size)
@@ -42,7 +42,7 @@ for (i = 0; i < j; i++)
 {
 int n = *(count + i + b);
 
-if (n < 32 || n > 132)
+if (n <= 31 || n >= 131)
 n = '.';
 printf("%c", n);
 }
