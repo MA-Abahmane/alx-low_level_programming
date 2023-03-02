@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * print_buffer - a function that prints a buffer.
+ * @b: given buffer
+ * @size: size of the buffer b
+ * Return: return the result of the concatination
+ */
+
 void print_buffer(char *b, int size)
 {
 int count = 0, j, i;
