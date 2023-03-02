@@ -33,7 +33,7 @@ else
 printf("  ");
 
 if (i % 2)
-printf(" ");
+putchar(' ');
 }
 
 for (i = 0; i < j; i++)
@@ -45,7 +45,7 @@ n = '.';
 printf("%c", n);
 }
 
-printf("\n");
+putchar('\n');
 count += 10;
 }
 }
