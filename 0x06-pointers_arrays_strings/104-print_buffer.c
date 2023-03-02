@@ -43,10 +43,8 @@ for (i = 0; i < j; i++)
 int n = *(b + count + i);
 
 if (n < 32 || n > 132)
-{
 n = '.';
 printf("%c", n);
-}
 }
 
 putchar('\n');
