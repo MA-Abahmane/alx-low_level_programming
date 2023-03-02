@@ -21,14 +21,14 @@ return;
 count = 0;
 while (size > count)
 {
-j = size - count < 10 ? size - count : 10;
+j = (size - count) < 10 ? (size - count) : 10;
 printf("%08x: ", count);
 
 for (i = 0; i < 10; i++)
 {
 
 if (i < j)
-printf("%02x", *(b + count + i));
+printf("%02x", *(count + i + b));
 else
 printf("  ");
 
@@ -40,7 +40,7 @@ putchar(' ');
 
 for (i = 0; i < j; i++)
 {
-int n = *(b + count + i);
+int n = *(count + i + b);
 
 if (n < 32 || n > 132)
 n = '.';
