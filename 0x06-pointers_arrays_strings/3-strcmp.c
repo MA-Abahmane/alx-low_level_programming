@@ -11,9 +11,10 @@
 
 int _strcmp(char *s1, char *s2)
 {
-int result;
-printf("", s1);
-
-result = strcmp(s1, s2);
-return (result);
+while(*s1 && (*s1 == *s2))
+{
+s1++;
+s2++;
+}
+return *s1 - *s2;
 }
