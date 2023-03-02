@@ -10,7 +10,7 @@
 
 void print_buffer(char *b, int size)
 {
-int count = 0, j, i;
+int i, j, count;
 
 if (size <= 0)
 {
@@ -18,6 +18,7 @@ putchar('\n');
 return;
 }
 
+count = 0;
 while (size > count)
 {
 j = size - count < 10 ? size - count : 10;
@@ -27,13 +28,16 @@ for (i = 0; i < 10; i++)
 {
 
 if (i < j)
+{
 printf("%02x", *(b + count + i));
-
+}
 else
 printf("  ");
 
 if (i % 2)
+{
 putchar(' ');
+}
 }
 
 for (i = 0; i < j; i++)
@@ -41,8 +45,10 @@ for (i = 0; i < j; i++)
 int n = *(b + count + i);
 
 if (n < 32 || n > 132)
+{
 n = '.';
 printf("%c", n);
+}
 }
 
 putchar('\n');
