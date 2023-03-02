@@ -1,0 +1,44 @@
+#include "main.h"
+#include <stdio.h>
+
+void print_buffer(char *b, int size)
+{
+int count = 0, j, i;
+
+if (size <= 0)
+{
+printf("\n");
+return;
+}
+
+while (size > count)
+{
+j = size - count < 10 ? size - count : 10;
+printf("%08x: ", count);
+
+for (i = 0; i < 10; i++)
+{
+
+if (i < j)
+printf("%02x", *(b + count + i));
+  
+else
+printf("  ");
+
+if (i % 2)
+printf(" ");
+}
+
+for (i = 0; i < j; i++)
+{
+int n = *(b + count + i);
+
+if (n < 32 || n > 132)
+n = '.';
+printf("%c", n);
+}
+
+printf("\n");
+count += 10;
+}
+}
