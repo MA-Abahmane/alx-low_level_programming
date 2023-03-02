@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -16,5 +15,5 @@ while(*s1 && (*s1 == *s2))
 s1++;
 s2++;
 }
-return *s1 - *s2;
+return (*s1 - *s2);
 }
