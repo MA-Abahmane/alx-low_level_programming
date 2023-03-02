@@ -28,6 +28,7 @@ for (i = 0; i < 10; i++)
 
 if (i < j)
 printf("%02x", *(b + count + i));
+  
 else
 printf("  ");
 
