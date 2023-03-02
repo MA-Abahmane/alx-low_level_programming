@@ -25,7 +25,5 @@ else
 printf("%d, ", num);
 }
 }
-
-putchar('\n');
 return;
 }
