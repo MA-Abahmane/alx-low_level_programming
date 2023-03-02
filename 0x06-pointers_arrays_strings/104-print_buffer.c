@@ -14,7 +14,7 @@ int count = 0, j, i;
 
 if (size <= 0)
 {
-putchar('\n');
+_putchar('\n');
 return;
 }
 
@@ -44,7 +44,7 @@ n = '.';
 printf("%c", n);
 }
 
-putchar('\n');
+_putchar('\n');
 count += 10;
 }
 }
