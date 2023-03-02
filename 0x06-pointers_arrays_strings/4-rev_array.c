@@ -10,18 +10,12 @@
 
 void reverse_array(int *a, int n)
 {
-int i, num;
-
-for (i = (n - 1); i >= 0; i--)
+int temp;
+for (int i = 0; i < n / 2; i++)
 {
-num = a[i];
-if (a[i] == 0)
-{
-printf("%d", num);
+temp = a[i];
+a[i] = a[n - i - 1];
+a[n - i - 1] = temp;
 }
-else
-{
-printf("%d, ", num);
-}
-}
+return;
 }
