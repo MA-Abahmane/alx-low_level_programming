@@ -11,8 +11,7 @@
 
 char *cap_string(char *str)
 {
-int j, arrSize;
-char *s;
+int j;
 
 j = 0;
 while (str[j] != '\0')
