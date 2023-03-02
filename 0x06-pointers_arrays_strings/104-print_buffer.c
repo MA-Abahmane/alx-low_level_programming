@@ -5,47 +5,49 @@
  * print_buffer - a function that prints a buffer.
  * @b: given buffer
  * @size: size of the buffer b
- * Return: return the result of the concatination
+ * Return: None
  */
 
 void print_buffer(char *b, int size)
 {
-int count = 0, j, i;
+int i, j, count;
 
 if (size <= 0)
 {
-printf("\n");
+putchar('\n');
 return;
 }
 
+count = 0;
 while (size > count)
 {
-j = size - count < 10 ? size - count : 10;
+j = (size - count) < 10 ? (size - count) : 10;
 printf("%08x: ", count);
 
 for (i = 0; i < 10; i++)
 {
 
 if (i < j)
-printf("%02x", *(b + count + i));
-  
+printf("%02x", *(count + i + b));
 else
 printf("  ");
 
 if (i % 2)
-printf(" ");
+{
+putchar(' ');
+}
 }
 
 for (i = 0; i < j; i++)
 {
-int n = *(b + count + i);
+int n = *(count + i + b);
 
-if (n < 32 || n > 132)
+if (n <= 31 || n >= 131)
 n = '.';
 printf("%c", n);
 }
 
-printf("\n");
+putchar('\n');
 count += 10;
 }
 }
