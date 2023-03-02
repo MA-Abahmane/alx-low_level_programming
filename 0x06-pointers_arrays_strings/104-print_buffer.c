@@ -14,7 +14,7 @@ int count = 0, j, i;
 
 if (size <= 0)
 {
-printf("\n");
+putchar('\n');
 return;
 }
 
@@ -28,7 +28,7 @@ for (i = 0; i < 10; i++)
 
 if (i < j)
 printf("%02x", *(b + count + i));
-  
+
 else
 printf("  ");
 
