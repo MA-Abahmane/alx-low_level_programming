@@ -26,4 +26,3 @@ putchar('\n');
 }
 return;
 }
-
