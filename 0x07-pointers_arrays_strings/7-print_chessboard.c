@@ -5,7 +5,7 @@
 /**
  * print_chessboard -a function that prints the chessboard.
  * @a: Given chess table string
- * Return: NONE
+ * Return:NONE
  */
 
 void print_chessboard(char (*a)[8])
