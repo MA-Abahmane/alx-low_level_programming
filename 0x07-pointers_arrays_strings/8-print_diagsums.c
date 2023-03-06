@@ -31,7 +31,6 @@ j += (size - 1);
 }
 
 printf("%d, %d\n", sum1, sum2);
-putchar('\n');
 return;
 }
 
