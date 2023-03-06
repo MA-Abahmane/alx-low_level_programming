@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * _strspn - a function that gets the length of a prefix substring.
+ * strspn - a function that gets the length of a prefix substring.
  * @s: Given string
  * @assept: number of bytes given
  * Return: The resulte of the byte search
