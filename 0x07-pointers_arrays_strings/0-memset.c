@@ -11,7 +11,7 @@
  */
 
 char *_memset(char *s, char b, unsigned int n)
-{ 
+{
 char *buffer = s;
 
 return (memset(buffer, b, n));
