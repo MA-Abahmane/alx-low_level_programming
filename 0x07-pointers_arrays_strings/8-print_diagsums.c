@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_chessboard - a function that prints the chessboard.
@@ -10,7 +11,7 @@
 void print_diagsums(int *a, int size)
 {
 int i, j;
-unsigned int sum1, sum2;
+int sum1, sum2;
 
 i = 0;
 sum1 = 0;
