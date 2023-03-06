@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_chessboard - a function that prints the chessboard.
+ * print_diagsums - a function that prints the chessboard.
  * @a: given intiger array
  * @size: given array size
  * Return: NONE
