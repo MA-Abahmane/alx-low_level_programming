@@ -26,7 +26,7 @@ return (0);
 
 if (s1 < s2 + 1)
 {
-return checker(str, s1 + 1, s2 - 1);
+return (checker(str, s1 + 1, s2 - 1));
 }
 return (1);
 }
@@ -45,5 +45,5 @@ int n = strlen(s);
 if (n == 0)
 return (1);
 
-return checker(s, 0, n - 1);
+return (checker(s, 0, n - 1));
 }
