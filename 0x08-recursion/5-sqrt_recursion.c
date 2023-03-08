@@ -5,6 +5,7 @@
 /**
  * tester - a function used to test powers on the base number
  * @power: testing powers
+ * @base: base == n
  * Return: the correct natural squareroot.
  */
 
@@ -24,7 +25,6 @@ return (tester(power + 1, base));
 /**
  * _sqrt_recursion - a function that returns the natural square root of n.
  * @n: base number
- * @base: base == n
  * Return: return the natural square root of n.
  */
 
