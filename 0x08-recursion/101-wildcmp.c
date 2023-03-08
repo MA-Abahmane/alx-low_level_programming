@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * checker - a recursive function that check 
+ * checker - a recursive function that check
  * if 2 string can be identical.
  * @str: the comparison
  * @s: string to compare
@@ -64,6 +64,9 @@ else if (*s1 == *s2)
 return (wildcmp(++s1, ++s2));
 
 else if (*s1 == '-')
+return (1);
+
+else if (*s2 == 'h*c')
 return (1);
 
 else
