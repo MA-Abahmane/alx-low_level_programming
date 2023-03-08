@@ -4,11 +4,13 @@
 
 /**
  * _sqrt_recursion - a function that returns the natural square root of n.
- * tester - a function used to test powers on the base number
  * @n: base number
  * @base: base == n
- * @power: testing powers
  * Return: return the natural square root of n.
+ *
+ * tester - a function used to test powers on the base number
+ * @power: testing powers
+ * Return: the correct natural squareroot.
  */
 
 int tester(int power, int base)
