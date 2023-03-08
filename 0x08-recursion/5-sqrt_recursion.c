@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - a function that returns the natural square root of a number.
+ * _sqrt_recursion - a function that returns the natural square root of n.
  * @n: base number
  * @base: base == n
  * Return: return the natural square root of n.
