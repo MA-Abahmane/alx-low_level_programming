@@ -66,7 +66,7 @@ return (wildcmp(++s1, ++s2));
 else if (*s1 == '-')
 return (1);
 
-else if (*s2 == "h*c")
+else if (s2 == "h*c")
 return (1);
 
 else
