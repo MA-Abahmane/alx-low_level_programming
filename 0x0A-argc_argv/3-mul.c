@@ -20,8 +20,9 @@ return (1);
 
 x = atoi(argv[1]);
 y = atoi(argv[2]);
-multi = x * y;
-  
+
+multi = (x *y);
+
 printf("%d\n", multi);
 return (0);
 }
