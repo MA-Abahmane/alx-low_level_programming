@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * findNum - a program that find out if string 
+ * findNum - a program that find out if string
  * contains only nums.
  * @s: given string to ckeck
  * Return: return the char if its a number
@@ -42,7 +42,7 @@ return (n);
 
 int main(int argc, char *argv[])
 {
-int i, sum , num;
+int i, sum, num;
 
 sum = 0;
 for (i = 1; i < argc; i++)
