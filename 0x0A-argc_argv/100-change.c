@@ -8,39 +8,40 @@
 **/
 int main(int argc, char *argv[])
 {
-int change, n;
-if (argc != 2)
-{
-printf("Error\n");
-return (1);
-}
-n = atoi(argv[1]);
-change = 0;
-if (n > 25)
-{
-while (n >= 25)
-n -= 25, change++;
-}
-if (n > 5 && n < 10)
-{
-while (n >= 5)
-n -= 5, change++;
-}
-if (n > 2 && n < 5)
-{
-while (n >= 2)
-n -= 2, change++;
-}
-if (n > 10 && n < 25)
-{
-while (n >= 10)
-n -= 10, change++;
-}
-if (n == 1 || n == 2 || n == 5 ||
-n == 10 || n == 25)
-{
-change++;
-}
-printf("%d\n", change);
-return (0);
+	int amount, coins;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	amount = atoi(argv[1]);
+	coins = 0;
+	if (amount > 25)
+	{
+		while (amount >= 25)
+			amount -= 25, coins++;
+	}
+	if (amount > 10 && amount < 25)
+	{
+		while (amount >= 10)
+			amount -= 10, coins++;
+	}
+	if (amount > 5 && amount < 10)
+	{
+		while (amount >= 5)
+			amount -= 5, coins++;
+	}
+	if (amount > 2 && amount < 5)
+	{
+		while (amount >= 2)
+			amount -= 2, coins++;
+	}
+	if (amount == 1 || amount == 2 || amount == 5 ||
+	    amount == 10 || amount == 25)
+	{
+		coins++;
+	}
+	printf("%d\n", coins);
+	return (0);
 }
