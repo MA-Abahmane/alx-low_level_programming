@@ -7,7 +7,6 @@
  * @a: Given chess table string
  * Return:NONE
  */
-
 void print_chessboard(char (*a)[8])
 {
 int i, j;
