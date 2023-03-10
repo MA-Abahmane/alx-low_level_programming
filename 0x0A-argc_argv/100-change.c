@@ -3,11 +3,13 @@
 
 /**
 * main - a program that prints the minimum.
-* number of coins to make change for an amount of money.
+* number of coins to make change for an 
+* amount of money.
 * @argc: arguement count.
 * @argv: array of pointers to arguement strings.
 * Return: return the number of change or/
-* 1 if the number of arguments passed to the program is not exactly 1.
+* 1 if the number of arguments passed 
+* to the program is not exactly 1.
 **/
 
 int main(int argc, char *argv[])
@@ -52,7 +54,7 @@ n == 10 || n == 25)
 {
 change++;
 }
-  
+
 printf("%d\n", change);
 return (0);
 }
