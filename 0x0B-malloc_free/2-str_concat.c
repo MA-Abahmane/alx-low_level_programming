@@ -35,6 +35,7 @@ while (i < size1)
 ar[i] = s1[i];
 i++;
 }
+
 j = 0;
 while (i < size1 + size2)
 {
@@ -42,5 +43,6 @@ ar[i] = s2[j];
 j++;
 i++;
 }
+
 return (ar);
 }
