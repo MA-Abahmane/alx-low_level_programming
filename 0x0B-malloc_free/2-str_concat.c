@@ -45,6 +45,5 @@ ar[i] = s2[j];
 j++;
 i++;
 }
-ar[i] = 0;
 return (ar);
 }
