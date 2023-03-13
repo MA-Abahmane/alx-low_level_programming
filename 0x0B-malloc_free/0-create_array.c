@@ -32,5 +32,5 @@ ar[i] = c;
 }
 ar[i] = 0;
 
-return (ar);
+return (size < 1 ? 0 : ar);
 }
