@@ -15,19 +15,19 @@ char *str_concat(char *s1, char *s2)
 char *ar;
 int i, j;
 
-if (s1 == NULL || s2 == NULL)
-{
-return (NULL);
-}
 if (s1 == NULL)
 {
-return (s2);
+s1 = "";
 }
 if (s2 == NULL)
 {
-return (s1);
+s2 = "";
 }
-  
+if (s1 == NULL && s2 == NULL)
+{
+return (NULL);
+}
+
 int size1 = strlen(s1), size2 = strlen(s2);
 int full_size = size1 + size2;
 
