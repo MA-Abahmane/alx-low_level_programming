@@ -22,15 +22,12 @@ if (s2 == 0)
 {
 s2 = "";
 }
-if (s1 == NULL && s2 == NULL)
-{
-return (NULL);
-}
+
 size1 = strlen(s1);
 size2 = strlen(s2);
-
 full_size = size1 + size2;
-ar = malloc(sizeof(char) * full_size + 1);
+
+ar = malloc(sizeof(char) * (full_size + 1));
 
 i = 0;
 while (i < size1)
