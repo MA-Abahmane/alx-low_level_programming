@@ -35,7 +35,9 @@ ar[i] = malloc(sizeof(int) * width);
 if (ar[i] == NULL)
 {
 for (--i; i >= 0; i--)
-    free(ar[i]);
+{
+free(ar[i]);
+}
 free(ar);
 return (NULL);
 }
