@@ -24,7 +24,7 @@ if (size != 0)
 {
 ar = malloc(sizeof(char) * size);
 
-if (array != NULL)
+if (ar != NULL)
 {
 i = 0;
 while (i < size)
