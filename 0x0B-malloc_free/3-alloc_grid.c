@@ -11,7 +11,6 @@
  * Return: "NULL" if width or height is 0 or less
  * / else return the the 2D array
  */
-
 int **alloc_grid(int width, int height)
 {
 int i, j;
@@ -23,7 +22,7 @@ return (NULL);
 }
 
 ar = malloc(sizeof(int *) * height);
-if ( ar == NULL)
+if (ar == NULL)
 {
 return (NULL);
 }
@@ -32,11 +31,15 @@ i = 0;
 while (i < height)
 {
 ar[i] = malloc(sizeof(int) * width);
+
 if (ar[i] == NULL)
 {
+for (--i; i >= 0; i--)
+    free(arr[i]);
+free(arr);
 return (NULL);
 }
-i++;
+++i;
 }
 
 for (i = 0; i < height; i++)
