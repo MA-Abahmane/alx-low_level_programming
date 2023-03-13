@@ -28,7 +28,8 @@ if (s1 == NULL && s2 == NULL)
 return (NULL);
 }
 
-int size1 = strlen(s1), size2 = strlen(s2);
+int size1 = strlen(s1)
+int size2 = strlen(s2);
 int full_size = size1 + size2;
 
 ar = malloc(sizeof(char) * full_size + 1);
