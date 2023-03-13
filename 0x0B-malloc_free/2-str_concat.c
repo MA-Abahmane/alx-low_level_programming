@@ -28,7 +28,7 @@ return ("NULL");
 ar = malloc(sizeof(char) * full_size);
 
 i = 0;
-while (i < strlen(s1))
+while (i < size1)
 {
 ar[i] = s1[i];
 i++;
