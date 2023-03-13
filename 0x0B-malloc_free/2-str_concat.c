@@ -32,7 +32,7 @@ if (s1 == NULL && s2 == NULL)
   return (NULL);
 }
 
-size1 = strlen(s1)
+size1 = strlen(s1);
 size2 = strlen(s2);
 
 full_size = size1 + size2;
