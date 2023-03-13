@@ -14,7 +14,8 @@
 char *str_concat(char *s1, char *s2)
 {
 char *ar;
-int i, j, l1, l2;
+int i, j, size1, size2, full_size;
+
 
 if (s1 == 0)
 {
@@ -31,9 +32,10 @@ if (s1 == NULL && s2 == NULL)
   return (NULL);
 }
 
-int size1 = strlen(s1), size2 = strlen(s2);
+size1 = strlen(s1)
+size2 = strlen(s2);
 
-int full_size = size1 + size2;
+full_size = size1 + size2;
 
 ar = malloc(sizeof(char) * full_size + 1);
 
