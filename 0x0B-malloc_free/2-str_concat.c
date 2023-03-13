@@ -25,7 +25,17 @@ if (s1 == NULL || s2 == NULL)
 return ("NULL");
 }
 
-ar = malloc(sizeof(char) * full_size);
+if (s1 == NULL)
+{
+return (s2);
+}
+  
+if (s2 == NULL)
+{
+return (s1);
+}
+
+ar = malloc(sizeof(char) * full_size + 1);
 
 i = 0;
 while (i < size1)
