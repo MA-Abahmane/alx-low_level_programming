@@ -18,7 +18,9 @@ char *ar = NULL;
 unsigned int i;
 
 if (size == 0)
-  return (0);
+{
+return (0);
+}
 
 if (size != 0)
 {
