@@ -17,9 +17,9 @@ char *create_array(unsigned int size, char c)
 char *ar;
 unsigned int i;
 
-if (size == 0 || c == '\0')
+if (size == 0)
 {
-return ("NULL");
+return (NULL);
 }
 
 ar = malloc(sizeof(char) * size);
@@ -30,7 +30,7 @@ while (i < size)
 ar[i] = c;
 ++i;
 }
-ar[i] = '\0';
+ar[i] = 0;
 
 return (ar);
 }
