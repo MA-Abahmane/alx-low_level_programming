@@ -16,7 +16,9 @@ char *str_concat(char *s1, char *s2)
 char *ar;
 int i, j;
   
-int full_size = strlen(s1) + strlen(s2);
+int size1 = strlen(s1), size2 = strlen(s2);
+  
+int full_size = size1 + size2;
 
 if (s1 == NULL || s2 == NULL)
 {
@@ -33,7 +35,7 @@ i++;
 }
   
 j = 0;
-while (i < strlen(s2) + strlen(s1))
+while (i < size1 + size2)
 {
 ar[i] = s2[j];
 j++;
