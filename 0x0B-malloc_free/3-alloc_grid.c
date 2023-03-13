@@ -19,13 +19,13 @@ int **ar;
 
 if (width <= 0  || width <= 0)
 {
-return NULL;
+return (NULL);
 }
 
 ar = malloc(sizeof(int *) * height);
 if ( ar == NULL)
 {
-return NULL;
+return (NULL);
 }
 
 i = 0;
