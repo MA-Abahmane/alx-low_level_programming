@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * create_array - a function that creates an array of chars, 
+ * create_array - a function that creates an array of chars,
  * then initializes it with a specific char.
  * @c: Given character
  * @size: the size of the memory to allocate for the char
@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 char *ar;
 unsigned int i;
 
-if (size == 0)
+if (size == 0 || c == NULL)
 {
 return ("NULL");
 }
@@ -25,7 +25,7 @@ return ("NULL");
 ar = malloc(sizeof(char) * size);
 
 i = 0;
-while(i < size)
+while (i < size)
 {
 ar[i] = c;
 ++i;
