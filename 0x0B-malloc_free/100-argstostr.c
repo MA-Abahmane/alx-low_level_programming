@@ -8,7 +8,7 @@
  * of a given program.
  *
  * @ac: given message size
- * @**av: given message char
+ * @av: given message char
  *
  * Return: "NULL" if ac is 0 or *av is NULL/ else return the filles
  * memory location.
