@@ -25,14 +25,14 @@ if (ac == 0 || av == NULL)
 return NULL;
 }
 
-for (i = 1; i < ac; i++)
+for (i = 1; i <= ac; i++)
 {
 len += strlen(av[i]);
 }
    
 args_list = ar = (char *)malloc(len + ac - 1);
 
-for (i = 1; i < ac; i++)
+for (i = 1; i <= ac; i++)
 {
 memcpy(args_list, av[i], strlen(av[i]));
 args_list += strlen(av[i])+1;
