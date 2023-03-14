@@ -4,8 +4,8 @@
 #include "main.h"
 
 /**
- * create_array - a function that returns a pointer to a newly
- * allocated space in memory, which contains a copy of the 
+ * _strdup - a function that returns a pointer to a newly
+ * allocated space in memory, which contains a copy of the
  * string given as a parameter.
  * @str: given string
  *
@@ -15,22 +15,30 @@
 
 char *_strdup(char *str)
 {
-char *ar;
+char *ar = NULL;
 int i, str_size;
 
 if (str == NULL)
 {
-return ("NULL");
+return (NULL);
 }
 
 str_size = strlen(str);
-ar = malloc(sizeof(char) * str_size);
+ar = malloc(sizeof(char) * str_size + 1);
+
+if (ar != NULL)
+{
 
 i = 0;
-while(i < str_size)
+while (i < str_size)
 {
 ar[i] = str[i];
 ++i;
+}
+}
+else
+{
+return (NULL);
 }
 ar[i] = '\0';
 
