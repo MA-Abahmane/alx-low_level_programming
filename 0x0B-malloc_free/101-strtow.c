@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-//#include "main.h"
+#include "main.h"
 		
 /**
  * **strtow - splits any given string into
@@ -9,7 +9,8 @@
  * Return: Return a pointer to an array of individual words
  * or "NULL" if an error ocured Error.
  */
-		
+
+int counter(char *str);
 char **strtow(char *str)	
 {
 char **ar, *t;
@@ -72,7 +73,7 @@ top = i;
 }
 }
 
-ar[j] = NULL;
+ar[j] = (NULL);
 	
 return (ar);	
 }
@@ -83,8 +84,8 @@ return (ar);
  *Return: number of words found
  */
 		
-int counter(char *str)		
-{	
+int counter(char *str)
+{
 int i, x, f;
 f = 0, x = 0;
 
