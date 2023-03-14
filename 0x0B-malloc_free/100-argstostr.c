@@ -38,7 +38,7 @@ memcpy(args_list, av[i], strlen(av[i]));
 args_list += strlen(av[i])+1;
 *(args_list-1) = '\n';
 }
-*(args_list-1) = 0;
+*(args_list-1) = '\n';
 
 return (ar);
 }
