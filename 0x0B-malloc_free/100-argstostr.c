@@ -22,23 +22,24 @@ int i;
 
 if (ac == 0 || av == NULL)
 {
-return NULL;
+return (NULL);
 }
 
 for (i = 0; i < ac; i++)
 {
 len += strlen(av[i]);
 }
-   
+
 args_list = ar = (char *)malloc(len + ac + 1);
 
 for (i = 0; i < ac; i++)
 {
 memcpy(args_list, av[i], strlen(av[i]));
-args_list += strlen(av[i])+1;
-*(args_list-1) = '\n';
+
+args_list += strlen(av[i]) + 1;
+*(args_list - 1) = '\n';
 }
-*(args_list-1) = '\n';
+*(args_list - 1) = '\n';
 
 return (ar);
 }
