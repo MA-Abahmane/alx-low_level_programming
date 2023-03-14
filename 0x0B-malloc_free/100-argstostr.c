@@ -30,7 +30,7 @@ for (i = 0; i < ac; i++)
 len += strlen(av[i]);
 }
    
-args_list = ar = (char *)malloc(len + ac - 1);
+args_list = ar = (char *)malloc(len + ac + 1);
 
 for (i = 0; i < ac; i++)
 {
