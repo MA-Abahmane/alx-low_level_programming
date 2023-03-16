@@ -69,7 +69,7 @@ ar = malloc(new_size);
 if (ar == NULL)
 return (NULL);
 
-nptr = memo_cpy(ar, ptr, n);
+ar = memo_cpy(ar, ptr, n);
 free(ptr);
 return (ar);
 }
