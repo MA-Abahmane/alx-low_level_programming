@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * memo_cpy - Copy n bytes from memory area src to memory area dest
@@ -22,12 +23,13 @@ char *memo_cpy(char *dest, char *src, unsigned int n)
 }
 
 /**
- * _realloc - Reallocate a memory block using malloc
- * @ptr: Old memory block
- * @old_size: Size of of old memory block
- * @new_size: Size the new memory block should be
+ * _realloc - a function that allocates memory for
+ * an array using malloc.
+ * @ptr: The given  block
+ * @old_size: given size of the old memory block
+ * @new_size: given size of size of the new memory block
  *
- * Return: Pointer to new memory space, NULL if it fails
+ * Return: Pointer to new memory space / NULL if it fails
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
