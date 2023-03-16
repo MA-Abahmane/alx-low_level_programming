@@ -26,10 +26,12 @@ if (s2 == NULL)
 s2 = "";
 }
 
+len = 0;
 while (s1[len] != '\0')
 {
 ++len;
 }
+
 size = sizeof(*ar) * (len + n);
 ar = malloc(size + 1);
 
@@ -49,7 +51,7 @@ j = 0;
 while (i < size && s2[j] != '\0')
 {
 ar[i] = s2[j];
-j++;
+++j;
 i++;
 }
 ar[i] = '\0';
