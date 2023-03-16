@@ -4,17 +4,17 @@
 /**
  * memo_cpy - Copy n bytes from memory area src to memory area dest
  * @dest: Memory area to copy to
- * @src: Memory area to copy from
+ * @srce: Memory area to copy from
  * @n: Amount to copy from memory area
  * Return: Pointer to area
  */
-char *memo_cpy(char *dest, char *src, unsigned int n)
+char *memo_cpy(char *dest, char *srce, unsigned int n)
 {
 unsigned int i;
 
 for (i = 0; i < n; i++)
 {
-dest[i] = src[i];
+dest[i] = srce[i];
 }
 
 return (dest);
@@ -26,7 +26,6 @@ return (dest);
  * @ptr: The given  block
  * @old_size: given size of the old memory block
  * @new_size: given size of size of the new memory block
- *
  * Return: Pointer to new memory space / NULL if it fails
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -44,10 +43,11 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		free(ptr);
 		return (NULL);
 	}
-	if (new_size == old_size)
-		return (ptr);
 	if (new_size < old_size)
 		min = new_size;
+	
+	if (new_size == old_size)
+		return (ptr);
 	else
 		min = old_size;
 	ar = malloc(new_size);
