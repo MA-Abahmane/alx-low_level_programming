@@ -4,9 +4,9 @@
 #include "main.h"
 
 /**
- * _realloc - Write a function that allocates memory for 
+ * _realloc - Write a function that allocates memory for
  * an array using malloc.
- * @ptr: ptr is a pointer to the memory previously 
+ * @ptr: ptr is a pointer to the memory previously
  *allocated with a call to malloc: malloc(old_size)
  * @old_size: the old size of ptr in memory
  * @new_size: the new size of ptr in memory
@@ -20,19 +20,19 @@ int *ar;
 
 if (new_size == old_size)
 {
-  return (ptr);
+return (ptr);
 }
 
 if (ptr == NULL)
 {
-  ar = malloc(new_size);
-  return (ar);
+ar = malloc(new_size);
+return (ar);
 }
 
 if (new_size == 0)
 {
-  free(ptr);
-  return (NULL);
+free(ptr);
+return (NULL);
 }
 
 ar = realloc(ptr, new_size);
