@@ -30,7 +30,7 @@ while (s1[len] != '\0')
 {
 ++len;
 }
-size = sizeof(*ar) * (len + n)
+size = sizeof(*ar) * (len + n);
 ar = malloc(size + 1);
 
 if (ar == NULL)
