@@ -16,7 +16,6 @@ for (i = 0; i < n; i++)
 {
 dest[i] = src[i];
 }
-
 return (dest);
 }
 
@@ -30,29 +29,30 @@ return (dest);
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *ar;
-	unsigned int min;
+void *ar;
+unsigned int min;
 
-	if (ptr == NULL)
-	{
-		ar = malloc(new_size);
-		return (ar);
-	}
-	if (ptr != NULL && new_size == 0)
-	{
-		free(ptr);
-		return (NULL);
-	}
-	if (new_size == old_size)
+if (ptr == NULL)
+{
+ar = malloc(new_size);
+return (ar);
+}
+if (ptr != NULL && new_size == 0)
+{
+free(ptr);
+return (NULL);
+}
+if (new_size == old_size)
 		return (ptr);
-	if (new_size < old_size)
-		min = new_size;
-	else
-		min = old_size;
-	ar = malloc(new_size);
-	if (ar == NULL)
-		return (NULL);
-	ar = memo_cpy(ar, ptr, min);
-	free(ptr);
-	return (ar);
+if (new_size < old_size)
+min = new_size;
+else
+min = old_size;
+
+ar = malloc(new_size);
+if (ar == NULL)
+return (NULL);
+ar = memo_cpy(ar, ptr, min);
+free(ptr);
+return (ar);
 }
