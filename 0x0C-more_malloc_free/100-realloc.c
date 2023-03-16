@@ -31,13 +31,13 @@ char *memo_cpy(char *dest, char *src, unsigned int n)
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *nptr;
+	void *ar;
 	unsigned int min;
 
 	if (ptr == NULL)
 	{
-		nptr = malloc(new_size);
-		return (nptr);
+		ar = malloc(new_size);
+		return (ar);
 	}
 	if (ptr != NULL && new_size == 0)
 	{
@@ -50,10 +50,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		min = new_size;
 	else
 		min = old_size;
-	nptr = malloc(new_size);
+	ar = malloc(new_size);
 	if (nptr == NULL)
 		return (NULL);
-	nptr = memo_cpy(nptr, ptr, min);
+	ar = memo_cpy(ar, ptr, min);
 	free(ptr);
-	return (nptr);
+	return (ar);
 }
