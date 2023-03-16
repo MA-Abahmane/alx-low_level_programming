@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-//#include "main.h"
+#include "main.h"
 
 /**
  * _realloc - Write a function that allocates memory for 
@@ -23,11 +23,6 @@ if (new_size == old_size)
   return (ptr);
 }
 
-if (new_size < old_size)
-{
-	min = new_size;
-}
-
 if (ptr == NULL)
 {
   ar = malloc(new_size);
@@ -40,7 +35,6 @@ if (new_size == 0)
   return (NULL);
 }
 
-else
 ar = realloc(ptr, new_size);
 free(ptr);
 
