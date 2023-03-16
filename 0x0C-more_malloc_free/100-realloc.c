@@ -32,8 +32,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 unsigned int n;
 void *ar;
 
-if (new_size == old_size)
-return (ptr);
 if (ptr == NULL)
 {
 ar = malloc(new_size);
@@ -44,14 +42,17 @@ if (new_size == 0 && ptr != NULL)
 free(ptr);
 return (NULL);
 }
+if (new_size == old_size)
+return (ptr);
 if (new_size < old_size)
 n = new_size;
 else
 n = old_size;	
 ar = malloc(new_size);
 if (ar == NULL)
+}
 return (NULL);
-
+}
 ar = memo_cpy(ar, ptr, n);
 free(ptr);
 return (ar);
