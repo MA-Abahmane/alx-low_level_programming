@@ -4,12 +4,12 @@
 #include "main.h"
 
 /**
- * _realloc - Write a function that allocates memory for
+ * _realloc - a function that allocates memory for
  * an array using malloc.
  * @ptr: ptr is a pointer to the memory previously
  *allocated with a call to malloc: malloc(old_size)
- * @old_size: the old size of ptr in memory
- * @new_size: the new size of ptr in memory
+ * @old_size: is the size, in bytes, of the allocated space for ptr
+ * @new_size: is the new size, in bytes of the new memory block
  * Return: "NULL" if s1 or s2s size is 0 / else return the allocated
  * memory location for the concatinated string.
  */
@@ -29,7 +29,7 @@ ar = malloc(new_size);
 return (ar);
 }
 
-if (new_size == 0)
+if (new_size == 0 && ptr != NULL)
 {
 free(ptr);
 return (NULL);
