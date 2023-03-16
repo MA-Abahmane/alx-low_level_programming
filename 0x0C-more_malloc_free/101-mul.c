@@ -46,7 +46,12 @@ unsigned int num1, num2, mul;
 
 if (argc > 3 || argc < 3)
 {
-puts("Error\n");
+_putchar('E');
+_putchar('r');
+_putchar('r');
+_putchar('o');
+_putchar('r');
+_putchar('\n');
 exit(98);
 }
 
@@ -55,12 +60,27 @@ num2 = num_finder(argv[2]);
 
 if (num1 == NULL || num2 == NULL)
 {
-puts("Error\n");
+_putchar('E');
+_putchar('r');
+_putchar('r');
+_putchar('o');
+_putchar('r');
+_putchar('\n');
+exit(98);
+}
+  
+if (num1 == 0 || num2 == 0)
+{
+_putchar('E');
+_putchar('r');
+_putchar('r');
+_putchar('o');
+_putchar('r');
+_putchar('\n');
 exit(98);
 }
 
 mul = num1 * num2;
-
-printf("%d\n", mul);
+  
 return (0);
 }
