@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * _calloc - Write a function that allocates memory for 
+ * _calloc - Write a function that allocates memory for
  * an array using malloc.
  * @nmemb: number of elements in the array
  * @size: number of bytes each element takes
