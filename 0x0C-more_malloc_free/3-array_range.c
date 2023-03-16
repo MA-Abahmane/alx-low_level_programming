@@ -22,7 +22,7 @@ if (min > max)
 return (NULL);
 }
 
-ar = malloc(sizeof(int) * (max - min) + 1);
+ar = malloc(sizeof(int) * ((max - min) + 1));
 
 if (ar == NULL)
 {
@@ -31,7 +31,7 @@ return (NULL);
 
 i = 0;
 min_cpy = min;
-while (i < max + 1)
+while (min_cpy <= max)
 {
 ar[i] = min_cpy;
 ++i;
