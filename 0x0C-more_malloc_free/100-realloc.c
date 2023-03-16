@@ -18,7 +18,6 @@ dest[i] = src[i];
 }
 return (dest);
 }
-
 /**
  * _realloc - a function that allocates memory for
  * an array using malloc.
@@ -43,7 +42,7 @@ free(ptr);
 return (NULL);
 }
 if (new_size == old_size)
-		return (ptr);
+return (ptr);
 if (new_size < old_size)
 min = new_size;
 else
@@ -52,6 +51,7 @@ min = old_size;
 ar = malloc(new_size);
 if (ar == NULL)
 return (NULL);
+
 ar = memo_cpy(ar, ptr, min);
 free(ptr);
 return (ar);
