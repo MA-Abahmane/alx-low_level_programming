@@ -3,6 +3,29 @@
 #include <string.h>
 #include "main.h"
 
+
+/**
+ * _memcpy - Copy n bytes from memory area src to memory area dest
+ * @dest: Memory area to copy to
+ * @src: Memory area to copy from
+ * @n: Amount to copy from memory area
+ *
+ * Return: Pointer to area
+ */
+char *memo_cpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int i;
+
+	i = 0;
+	while (i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	return (dest);
+}
+
+
 /**
  * _realloc - a function that allocates memory for
  * an array using malloc.
@@ -16,6 +39,7 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
+unsigned int n;
 void *ar;
 
 if (new_size == old_size)
@@ -34,14 +58,18 @@ if (new_size == 0 && ptr != NULL)
 free(ptr);
 return (NULL);
 }
+  
+if (new_size < old_size)
+n = new_size;
+else
+n = old_size;
 
-ar = realloc(ptr, new_size);
+ar = malloc(new_size);
 
 if (ar == NULL)
-{
 return (NULL);
-}
 
+nptr = memo_cpy(ar, ptr, n);
 free(ptr);
 return (ar);
 }
