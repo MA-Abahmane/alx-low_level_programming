@@ -36,39 +36,29 @@ return (dest);
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-unsigned int n;
-void *ar;
+	void *nptr;
+	unsigned int min;
 
-
-if (ptr == NULL)
-{
-ar = malloc(new_size);
-return (ar);
-}
-
-if (new_size == 0 && ptr != NULL)
-{
-free(ptr);
-return (NULL);
-}
-
-if (new_size == old_size)
-{
-return (ptr);
-}
-if (new_size < old_size)
-n = new_size;
-
-else
-n = old_size;
-
-ar = malloc(new_size);
-
-if (ar == NULL)
-return (NULL);
-
-ar = memo_cpy(ar, ptr, n);
-free(ptr);
-
-return (ar);
+	if (ptr == NULL)
+	{
+		nptr = malloc(new_size);
+		return (nptr);
+	}
+	if (ptr != NULL && new_size == 0)
+	{
+		free(ptr);
+		return (NULL);
+	}
+	if (new_size == old_size)
+		return (ptr);
+	if (new_size < old_size)
+		min = new_size;
+	else
+		min = old_size;
+	nptr = malloc(new_size);
+	if (nptr == NULL)
+		return (NULL);
+	nptr = _memcpy(nptr, ptr, min);
+	free(ptr);
+	return (nptr);
 }
