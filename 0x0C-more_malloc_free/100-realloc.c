@@ -36,12 +36,12 @@ return (NULL);
 }
 
 ar = realloc(ptr, new_size);
-free(ptr);
 
 if (ar == NULL)
 {
 return (NULL);
 }
 
+free(ptr);
 return (ar);
 }
