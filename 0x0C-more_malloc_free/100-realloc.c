@@ -51,7 +51,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	else
 		min = old_size;
 	ar = malloc(new_size);
-	if (nptr == NULL)
+	if (ar == NULL)
 		return (NULL);
 	ar = memo_cpy(ar, ptr, min);
 	free(ptr);
