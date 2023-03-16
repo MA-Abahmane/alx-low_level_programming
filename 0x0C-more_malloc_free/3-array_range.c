@@ -8,21 +8,21 @@
  * @min: the starting number of the array
  * @max: the ending number of the array
  *
- * Return: "NULL" if min is larger then max / else return the 
+ * Return: "NULL" if min is larger then max / else return the
  * pointer to the newly created array
  */
 
 int *array_range(int min, int max)
 {
-int i;
-int *ar = NULL;
+int i, min2;
+int *ar;
 
 if (min > max)
 {
 return (NULL);
 }
 
-ar = malloc(sizeof(int) * max + 1);
+ar = malloc(sizeof(int) * (max - min) + 1);
 
 if (ar == NULL)
 {
@@ -30,10 +30,12 @@ return (NULL);
 }
 
 i = 0;
+min_cpy = min;
 while (i < max + 1)
 {
-ar[i] = i;
+ar[i] = min_cpy;
 ++i;
+min_cpy++;
 }
 
 return (ar);
