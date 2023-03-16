@@ -27,7 +27,8 @@ s2 = "";
 }
 
 size1 = strlen(s1);
-ar = malloc(sizeof(char *) * (size1 + n) + 1);
+size = sizeof(*ar) * (size1 + n)
+ar = malloc(size);
 
 if (ar == NULL)
 {
