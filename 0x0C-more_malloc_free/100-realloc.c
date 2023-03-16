@@ -1,4 +1,5 @@
 #include <stdlib.h>
+
 /**
  * memo_cpy - a function that copys n bytes from memory srce 
  *to memory dest
@@ -9,14 +10,16 @@
  */
 char *memo_cpy(char *dest, char *srce, unsigned int n)
 {
-unsigned int i = 0;
-while (i < n)
-{
-dest[i] = srce[i];
-++i;
+	unsigned int i = 0;
+  
+	while (i < n)
+	{
+		dest[i] = srce[i];
+		i++;
+	}
+	return (dest);
 }
-return (dest);
-}
+
 /**
  * _realloc - a function that allocates memory for
  * an array using malloc.
@@ -24,36 +27,33 @@ return (dest);
  *allocated with a call to malloc: malloc(old_size)
  * @old_size: is the size, in bytes, of the allocated space for ptr
  * @new_size: is the new size, in bytes of the new memory block
- * Return: "NULL" if s1 or s2s size is 0 / else return the allocated
- * memory location for the concatinated string.
+ * Return: Pointer to new memory space, NULL if it fails
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-unsigned int n;
-void *ar;
+	void *ar;
+	unsigned int min;
 
-if (ptr == NULL)
-{
-ar = malloc(new_size);
-return (ar);
-}
-if (new_size == 0 && ptr != NULL)
-{
-free(ptr);
-return (NULL);
-}
-if (new_size == old_size)
-return (ptr);
-if (new_size < old_size)
-n = new_size;
-else
-n = old_size;	
-ar = malloc(new_size);
-if (ar == NULL)
-}
-return (NULL);
-}
-ar = memo_cpy(ar, ptr, n);
-free(ptr);
-return (ar);
+	if (ptr == NULL)
+	{
+		ar = malloc(new_size);
+		return (ar);
+	}
+	if (ptr != NULL && new_size == 0)
+	{
+		free(ptr);
+		return (NULL);
+	}
+	if (new_size == old_size)
+		return (ptr);
+	if (new_size < old_size)
+		min = new_size;
+	else
+		min = old_size;
+	ar = malloc(new_size);
+	if (ar == NULL)
+		return (NULL);
+	ar = memo_cpy(ar, ptr, min);
+	free(ptr);
+	return (ar);
 }
