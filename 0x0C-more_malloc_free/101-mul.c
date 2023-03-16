@@ -32,6 +32,11 @@ i++;
 return (n);
 }
 
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
 /**
  * main -a program that multiplies two positive numbers.
  * @argv: Given array from function input parameters
@@ -42,9 +47,9 @@ return (n);
 
 int main(int argc, char *argv[])
 {
-unsigned int num1, num2, mul;
+int num1, num2, mul;
 
-if (argc > 3 || argc < 3)
+if (argc != 3)
 {
 _putchar('E');
 _putchar('r');
