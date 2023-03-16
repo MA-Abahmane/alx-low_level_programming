@@ -4,17 +4,17 @@
 /**
  * memo_cpy - Copy n bytes from memory area src to memory area dest
  * @dest: Memory area to copy to
- * @srce: Memory area to copy from
+ * @src: Memory area to copy from
  * @n: Amount to copy from memory area
  * Return: Pointer to area
  */
-char *memo_cpy(char *dest, char *srce, unsigned int n)
+char *memo_cpy(char *dest, char *src, unsigned int n)
 {
 unsigned int i;
 
 for (i = 0; i < n; i++)
 {
-dest[i] = srce[i];
+dest[i] = src[i];
 }
 
 return (dest);
