@@ -5,24 +5,23 @@
 
 
 /**
- * _memcpy - Copy n bytes from memory area src to memory area dest
- * @dest: Memory area to copy to
- * @src: Memory area to copy from
- * @n: Amount to copy from memory area
- *
- * Return: Pointer to area
+ * memo_cpy - a function that copys n bytes from memory srce 
+ *to memory dest
+ * @dest: given empty memory area to copy to
+ * @srce: given memory to copy from
+ * @n: Amount of bytes to copy from a memory area
+ * Return: Pointer to the allocated memory area
  */
-char *memo_cpy(char *dest, char *src, unsigned int n)
+char *memo_cpy(char *dest, char *srce, unsigned int n)
 {
-	unsigned int i;
-
-	i = 0;
-	while (i < n)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	return (dest);
+	unsigned int i = 0;
+  
+while (i < n)
+{
+dest[i] = srce[i];
+++i;
+}
+return (dest);
 }
 
 
@@ -58,7 +57,7 @@ if (new_size == 0 && ptr != NULL)
 free(ptr);
 return (NULL);
 }
-  
+
 if (new_size < old_size)
 n = new_size;
 else
@@ -71,5 +70,6 @@ return (NULL);
 
 ar = memo_cpy(ar, ptr, n);
 free(ptr);
+
 return (ar);
 }
