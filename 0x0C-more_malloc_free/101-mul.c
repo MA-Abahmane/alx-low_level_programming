@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-//#include "main.h"
 
 /**
  * num_finder - a program that find out if string
