@@ -42,7 +42,7 @@ return (n);
 
 int main(int argc, char *argv[])
 {
-int num1, num2, mul;
+unsigned int num1, num2, mul, max = 1000000;
 
 if (argc != 3)
 {
@@ -59,8 +59,13 @@ printf("Error\n");
 exit(98);
 }
 
+if (num1 > max || num2 > max)
+{
+printf("Error\n");
+exit(98);
+}
+  
 mul = num1 *num2;
 printf("%d\n", mul);
 return (0);
 }
-
