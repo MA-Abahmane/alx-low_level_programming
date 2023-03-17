@@ -42,7 +42,7 @@ return (n);
 
 int main(int argc, char *argv[])
 {
-unsigned int num1, num2, mul, max = 1000000;
+unsigned int num1, num2, mul;
 
 if (argc != 3)
 {
