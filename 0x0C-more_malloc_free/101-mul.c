@@ -58,7 +58,7 @@ if (num_finder(argv[1]) == 777 || num_finder(argv[2]) == 777)
 printf("Error\n");
 exit(98);
 }
-  
+
 mul = num1 *num2;
 printf("%d\n", mul);
 return (0);
