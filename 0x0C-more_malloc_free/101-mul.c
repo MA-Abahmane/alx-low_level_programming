@@ -42,7 +42,7 @@ return (n);
 
 int main(int argc, char *argv[])
 {
-unsigned long long int num1, num2, mul;
+long long int num1, num2, mul;
 
 if (argc != 3)
 {
