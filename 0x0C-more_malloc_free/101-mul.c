@@ -7,7 +7,7 @@
  * contains only nums.
  * @s: given string to ckeck
  * Return: return the char if its a number
- * else return -1
+ * else return 777
  **/
 
 int num_finder(char *s)
@@ -42,7 +42,7 @@ return (n);
 
 int main(int argc, char *argv[])
 {
-unsigned int num1, num2, mul;
+unsigned int num1, num2, mul, max = 4294967295;
 
 if (argc != 3)
 {
@@ -58,8 +58,15 @@ if (num_finder(argv[1]) == 777 || num_finder(argv[2]) == 777)
 printf("Error\n");
 exit(98);
 }
-
+  
 mul = num1 *num2;
+
+if ((num1 * num2) > max || num1 < max || num2 < max)
+{
+printf("Error\n");
+exit(98);
+}
+
 printf("%d\n", mul);
 return (0);
 }
