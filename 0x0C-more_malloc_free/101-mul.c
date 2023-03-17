@@ -66,7 +66,13 @@ exit(98);
 }
 
 mul = num1 * num2;
+<<<<<<< HEAD
 printf("%d", mul);
 return (0);
 }
 
+=======
+printf("%d\n", mul);
+return (0);
+}
+>>>>>>> bd459080002b879dd10f6184c00c89f3fd892942
