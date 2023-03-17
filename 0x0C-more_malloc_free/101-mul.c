@@ -42,7 +42,7 @@ return (n);
 
 int main(int argc, char *argv[])
 {
-long long int num1, num2, mul;
+unsigned long int num1, num2, mul;
 
 if (argc != 3)
 {
@@ -60,6 +60,6 @@ exit(98);
 }
 
 mul = num1 *num2;
-printf("%lld\n", mul);
+printf("%ld\n", mul);
 return (0);
 }
