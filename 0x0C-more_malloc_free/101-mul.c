@@ -42,7 +42,7 @@ return (n);
 
 int main(int argc, char *argv[])
 {
-unsigned long int num1, num2, mul;
+unsigned long long int num1, num2, mul;
 
 if (argc != 3)
 {
@@ -58,8 +58,8 @@ if (num_finder(argv[1]) == 777 || num_finder(argv[2]) == 777)
 printf("Error\n");
 exit(98);
 }
-  
+
 mul = num1 *num2;
-printf("%ld\n", mul);
+printf("%lld\n", mul);
 return (0);
 }
