@@ -14,7 +14,7 @@ char *name;
 char *owner;
 float age;
 
-}dog_t;
+} (dog_t);
 
 
 /* :function prototypes: */
