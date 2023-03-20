@@ -36,5 +36,5 @@ ptr->name = name;
 ptr->age = age;
 ptr->owner = owner;
 
-return (ptr)
+return (ptr);
 }
