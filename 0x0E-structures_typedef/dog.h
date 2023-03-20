@@ -1,19 +1,20 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef DOG_H_
+#define DOG_H_
+
 /**
  * struct dog - a structure contaning dog info
  * @name: dog name
  * @owner: the dogs owner name
  * @age: dogs age
  */
-
 typedef struct dog
 {
 
 char *name;
 char *owner;
 float age;
-} dog_t;
+
+}dog_t;
 
 
 /* :function prototypes: */
