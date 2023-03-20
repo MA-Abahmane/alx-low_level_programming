@@ -7,7 +7,7 @@
  * contains only nums.
  * @s: given string to ckeck
  * Return: return the char if its a number
- * else return -1
+ * else return 777
  **/
 
 int num_finder(char *s)
@@ -22,7 +22,7 @@ while (i < len)
 {
 if (s[i] < '0' || s[i] > '9')
 {
-return (-1);
+return (777);
 }
 else
 n = n * 10 + (s[i] - '0');
@@ -42,7 +42,7 @@ return (n);
 
 int main(int argc, char *argv[])
 {
-int num1, num2, mul;
+unsigned long int num1, num2, mul;
 
 if (argc != 3)
 {
@@ -53,14 +53,13 @@ exit(98);
 num1 = num_finder(argv[1]);
 num2 = num_finder(argv[2]);
 
-if (num_finder(argv[1]) == -1 || num_finder(argv[2]) == -1)
+if (num_finder(argv[1]) == 777 || num_finder(argv[2]) == 777)
 {
 printf("Error\n");
 exit(98);
 }
 
 mul = num1 *num2;
-printf("%d", mul);
+printf("%ld\n", mul);
 return (0);
 }
-
