@@ -25,8 +25,8 @@ return (NULL);
 
 if (owner == NULL)
 {
-free(name);
 free(ptr);
+free(name);
 return (NULL);
 }
 
