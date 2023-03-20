@@ -14,9 +14,9 @@ d->owner = "(nil)";
 
 if (d != NULL)
 {
-if (d->age == 0)
+if (d->age <= 0)
 {
-printf("Name: %s\nAge: (nil)\nOwner: %s", d->name, d->owner);
+printf("Name: %s\nAge: (nil)\nOwner: %s\n", d->name, d->owner);
 }
 else
 {
