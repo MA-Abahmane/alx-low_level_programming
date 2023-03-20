@@ -1,38 +1,37 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
+#include <stdlib.h>
 
 /**
- * new_dog - a function that creates a new dog.
- * dogs.
- * @d: given structure to copy
+ * new_dog - entry point
+ * @name: string from main, name of pet
+ * @age: number from main, age of pet
+ * @owner: string from main, owner of pet
+ *
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *ptr;
-ptr = malloc(sizeof(dog_t));
+	dog_t *p;
 
-if (ptr == NULL)
-return (NULL);
+  
+	p = malloc(sizeof(dog_t));
+	if (p == NULL)
+		return (NULL);
 
-if (name == NULL)
-{
-free(ptr);
-free(owner);
-return (NULL);
-}
-
-if (owner == NULL)
-{
-free(ptr);
-free(name);
-return (NULL);
-}
-
-ptr->name = name;
-prt->age = age;
-ptr->owner = owner;
-
-return (ptr)
+  
+	if (name == NULL)
+	{
+		free(p);
+		free(owner);
+		return (NULL);
+	}
+	if (owner == NULL)
+	{
+		free(p);
+		free(name);
+		return (NULL);
+	}
+	p->name = name;
+	p->age = age;
+	p->owner = owner;
+	return (p);
 }
