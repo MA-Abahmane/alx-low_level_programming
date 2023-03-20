@@ -3,7 +3,7 @@
 #include "dog.h"
 
 /**
- * free_dog - a function that frees the structure 
+ * free_dog - a function that frees the structure
  * dogs.
  * @d: given structure to free
  */
