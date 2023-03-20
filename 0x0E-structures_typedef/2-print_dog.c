@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "dog.h"
 /**
  * print_dog -  a function that prints a struct dog
@@ -14,7 +15,7 @@ d->owner = "(nil)";
 
 if (d != NULL)
 {
-if (d->age <= 0)
+if (isnan(d->age))
 {
 printf("Name: %s\nAge: (nil)\nOwner: %s\n", d->name, d->owner);
 }
