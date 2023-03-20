@@ -20,22 +20,17 @@ if (ptr == NULL)
 return (NULL);
 }
 
-if (name == NULL)
+if (!name)
 {
 free(ptr);
 free(owner);
 return (NULL);
 }
 
-if (owner == NULL)
+if (!owner)
 {
 free(ptr);
 free(name);
-return (NULL);
-}
-
-if (ptr == NULL)
-{
 return (NULL);
 }
 
