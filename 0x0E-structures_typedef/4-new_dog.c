@@ -34,6 +34,11 @@ free(name);
 return (NULL);
 }
 
+if (ptr == NULL)
+{
+return (NULL);
+}
+
 ptr->name = name;
 ptr->age = age;
 ptr->owner = owner;
