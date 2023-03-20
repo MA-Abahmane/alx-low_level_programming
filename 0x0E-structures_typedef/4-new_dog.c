@@ -33,7 +33,7 @@ if (owner == NULL)
 }
 
 ptr->name = name;
-prt->age = age;
+ptr->age = age;
 ptr->owner = owner;
 
 return (ptr)
