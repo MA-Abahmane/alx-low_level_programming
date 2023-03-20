@@ -15,13 +15,6 @@ d->owner = "(nil)";
 
 if (d != NULL)
 {
-if (d->age)
-{
 printf("Name: %s\nAge: %f\nOwner: %s\n", d->name, d->age, d->owner);
-}
-else
-{
-printf("Name: %s\nAge: (nil)\nOwner: %s\n", d->name, d->owner);
-}
 }
 }
