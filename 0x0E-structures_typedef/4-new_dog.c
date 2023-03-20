@@ -38,6 +38,8 @@ ptr->name = name;
 ptr->age = age;
 ptr->owner = owner;
 
-
+if (ptr)
+{
 return (ptr);
+}
 }
