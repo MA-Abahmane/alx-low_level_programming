@@ -20,7 +20,7 @@ printf("Name : %s\nAge : (nil)\nOwner : %s", d->name, d->owner);
 }
 else
 {
-printf("Name : %s\nAge : %f%s\nOwner : %s", d->name, d->age, d->owner);
+printf("Name : %s\nAge : %f\nOwner : %s", d->name, d->age, d->owner);
 }
 }
 }
