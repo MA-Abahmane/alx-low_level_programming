@@ -16,7 +16,7 @@ char *str;
 if (s == NULL)
 return (NULL);
 
-len = strlen(s) + 1;
+len = (strlen(s) + 1);
 str = malloc(sizeof(char) * len);
 
 if (str == NULL)
@@ -54,14 +54,15 @@ if (ptr->name == NULL)
 free(ptr);
 return (NULL);
 }
-ptr->age = age;
+
 ptr->owner = stringer(owner);
 if (ptr->owner == NULL)
 {
-free(ptr->name);
+free(name);
 free(ptr);
 return (NULL);
 }
 
+ptr->age = age;
 return (ptr);
 }
