@@ -58,7 +58,7 @@ return (NULL);
 ptr->owner = stringer(owner);
 if (ptr->owner == NULL)
 {
-free(name);
+free(ptr->name);
 free(ptr);
 return (NULL);
 }
