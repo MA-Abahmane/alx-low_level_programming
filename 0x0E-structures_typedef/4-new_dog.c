@@ -1,6 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 #include <string.h>
+/* String copier*/
 char *stringer(char *s);
 
 /**
