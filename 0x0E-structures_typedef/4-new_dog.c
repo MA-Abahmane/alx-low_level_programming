@@ -1,36 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 #include <string.h>
-
-/**
- * stringer - a function that creates a copy of a string.
- * @s: given string to copy
- * Return: return the copy
- */
-
-char *stringer(char *s)
-{
-int i, len;
-char *str;
-
-if (s == NULL)
-return (NULL);
-
-len = (strlen(s) + 1);
-str = malloc(sizeof(char) * len);
-
-if (str == NULL)
-return (NULL);
-
-i = 0;
-while (s[i] != '\0')
-{
-str[i] = s[i];
-++i;
-}
-str[i] = '\0';
-return (str);
-}
+char *stringer(char *s);
 
 /**
  * new_dog - a function that creates a new dog.
@@ -65,4 +36,35 @@ return (NULL);
 
 ptr->age = age;
 return (ptr);
+}
+
+
+/**
+ * stringer - a function that creates a copy of a string.
+ * @s: given string to copy
+ * Return: return the copy
+ */
+
+char *stringer(char *s)
+{
+int i, len;
+char *str;
+
+if (s == NULL)
+return (NULL);
+
+len = (strlen(s) + 1);
+str = malloc(sizeof(char) * len);
+
+if (str == NULL)
+return (NULL);
+
+i = 0;
+while (s[i] != '\0')
+{
+str[i] = s[i];
+++i;
+}
+str[i] = '\0';
+return (str);
 }
