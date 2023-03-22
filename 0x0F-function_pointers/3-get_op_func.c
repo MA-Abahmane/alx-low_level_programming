@@ -8,12 +8,13 @@
  *
  * @s: The operator
  * Return: return the correct function pointer judging from the
- *   operator given to main
+ * operator given to main
  */
 
 int (*get_op_func(char *s))(int, int)
 {
 int i;
+
 op_t ops[] = {
 {"+", op_add},
 {"-", op_sub},
@@ -23,7 +24,7 @@ op_t ops[] = {
 {NULL, NULL}
 };
 
-for (i = 0; ops[i].op != NULL; i++)
+for (i = 0; < 5; i++)
 {
 if (*s == *(ops[i].op))
 {
