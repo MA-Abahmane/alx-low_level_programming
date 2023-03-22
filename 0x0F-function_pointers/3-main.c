@@ -14,7 +14,6 @@
 
 int main(int argc, char **argv)
 {
-int i;
 int answer;
 char op;
 int (*op_check)(int,int);
