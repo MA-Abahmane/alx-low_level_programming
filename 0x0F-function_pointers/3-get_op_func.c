@@ -24,7 +24,7 @@ op_t ops[] = {
 {NULL, NULL}
 };
 
-for (i = 0; < 5; i++)
+for (i = 0; i < 5; i++)
 {
 if (*s == *(ops[i].op))
 {
