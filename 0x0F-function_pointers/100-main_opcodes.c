@@ -1,11 +1,12 @@
 #include<stdlib.h>
 #include<stdio.h>
+#define x "%02hhx"
 
 /**
  * main - a program that prints the opcodes of its own main function.
  * @argc: the number given of parameters.
  * @argv: the given parameters.
- * 
+ *
  * Return: 0 in successful
  */
 
@@ -29,7 +30,7 @@ exit(2);
 i = 0;
 while (i < num)
 {
-printf("%02hhx", *((char *)main + i));
+printf(x, *((char *)main + i));
 
 if (i < (num - 1))
 printf(" ");
