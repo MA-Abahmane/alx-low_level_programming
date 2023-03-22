@@ -7,7 +7,7 @@
  * @argc: the number given of parameters.
  * @argv: the given parameters.
  *
- * Return: 0 in successful
+ * Return: 0 if all condition passed with success
  */
 
 int main(int argc, char *argv[])
@@ -33,9 +33,9 @@ while (i < num)
 printf(x, *((char *)main + i));
 
 if (i < (num - 1))
-printf(" ");
+putchar(' ');
 else
-printf("\n");
+putchar('\n');
 ++i;
 }
 
