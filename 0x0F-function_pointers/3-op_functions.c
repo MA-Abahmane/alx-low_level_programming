@@ -10,7 +10,7 @@ return (a + b);
 }
 
 /**
- * op_add - subtract 2 numbers
+ * op_sub - subtract 2 numbers
  * @a: num 1
  * @b: num 2
  * Return: the resulte
@@ -21,7 +21,7 @@ return (a - b);
 }
 
 /**
- * op_add - multiply 2 numbers
+ * op_mul - multiply 2 numbers
  * @a: num 1
  * @b: num 2
  * Return: the resulte
@@ -32,7 +32,7 @@ return (a * b);
 }
 
 /**
- * op_add - devide 2 numbers
+ * op_div - devide 2 numbers
  * @a: num 1
  * @b: num 2
  * Return: the resulte
@@ -43,7 +43,7 @@ return (a / b);
 }
 
 /**
- * op_add - find the modulo of 2 numbers
+ * op_mod - find the modulo of 2 numbers
  * @a: num 1
  * @b: num 2
  * Return: the modulo
