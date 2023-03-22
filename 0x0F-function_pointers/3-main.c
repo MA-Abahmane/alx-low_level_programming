@@ -1,12 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 #include "3-calc.h"
 
 /**
  * main - a function that takes in an expression as
- *     Arguments and return the answer.
- * - works as a calculator.
+ * Arguments and return the answer.
+ * works as a calculator.
  * @argc: given Arguments array size
  * @argv: given Arguments array
  * Return: the answer to the given expression
@@ -38,8 +37,8 @@ printf("Error\n");
 exit(99);
 }
 
-
 answer = op_check(atoi(argv[1]), atoi(argv[3]));
 printf("%d\n", answer);
-return(0);
+
+return (0);
 }
