@@ -11,11 +11,11 @@
  * Return: the answer to the given expression
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 int answer;
 char op;
-int (*op_check)(int,int);
+int (*op_check)(int, int);
 
 if (argc != 4)
 {
