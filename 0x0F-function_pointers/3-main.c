@@ -15,6 +15,7 @@
 int main(int argc, char **argv)
 {
 int i;
+int answer;
 char op;
 int (*op_check)(int,int);
 
@@ -39,7 +40,7 @@ exit(99);
 }
 
 
-int answer = op_check(atoi(argv[1]), atoi(argv[3]));
+answer = op_check(atoi(argv[1]), atoi(argv[3]));
 printf("%d\n", answer);
 return(0);
 }
