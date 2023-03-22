@@ -12,6 +12,9 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
+if (size <= 0 || array == NULL)
+return;
+
 int i = 0;
 while (i < size)
 {
