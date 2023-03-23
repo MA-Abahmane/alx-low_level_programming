@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - a function that prints numbers,
- * followed by a new line.
+ *  followed by a new line.
  * @n: number of given arguments.
  * @separator: given argument seperator.
  *
