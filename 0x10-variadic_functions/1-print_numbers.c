@@ -14,7 +14,7 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-int i;
+unsigned int i;
 va_list ptr;
 
 va_start(ptr, n);
@@ -34,7 +34,7 @@ printf("%s", separator);
 
 i++;
 }
-putchar('\n');
+printf("\n");
 
 va_end(ptr);
 }
