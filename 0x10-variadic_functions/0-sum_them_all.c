@@ -14,7 +14,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 
-int i, sum;
+unsigned i, sum;
 
 va_list ptr;
 
