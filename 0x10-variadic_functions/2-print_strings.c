@@ -4,7 +4,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - a function that prints strings,
+ * print_strings - a function that prints strings,
  * followed by a new line.
  * @n: number of given arguments.
  * @separator: given argument seperator.
@@ -15,7 +15,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
-char *s;
+char *s = "";
 va_list ptr;
 
 va_start(ptr, n);
@@ -25,10 +25,10 @@ while (i < n)
 {
 s = va_arg(ptr, char*);
 
-if (s == NULL)
-printf("(nil)");
-else
+if (s != NULL)
 printf("%s", s);
+else
+printf("(nil)");
 
 if (i != (n - 1) && separator != NULL)
 printf("%s", separator);
