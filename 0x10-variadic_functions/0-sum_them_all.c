@@ -7,14 +7,14 @@
  * sum_them_all - a function that returns the sum of all
  * its parameters.
  * @n: given numbers
- * 
+ *
  * Return: the sum of given numbers.
  */
 
 int sum_them_all(const unsigned int n, ...)
 {
 
-unsigned i, sum;
+unsigned int i, sum;
 
 va_list ptr;
 
