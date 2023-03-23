@@ -26,8 +26,8 @@ printf("%d", va_arg(ptr, int));
 
 if (i < n - 1)
 {
-if (separator == NULL)
-printf("%s", separator);
+if (*separator == 0 ||separator == NULL)
+printf("");
 else
 printf("%s", separator);
 }
