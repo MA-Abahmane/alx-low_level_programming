@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include<stdlib.h>
 #include<stdio.h>
 #include <stdarg.h>
 
@@ -19,7 +18,7 @@ va_list ptr;
 
 va_start(ptr, n);
 
-i = 1;
+i = 0;
 while (i < n)
 {
 printf("%d", va_arg(ptr, int));
