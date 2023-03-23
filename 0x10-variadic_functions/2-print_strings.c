@@ -23,20 +23,15 @@ va_start(ptr, n);
 i = 0;
 while (i < n)
 {
-s = va_arg(ptr, char*);
+s = va_arg(strings, char *);
 
 if (s != NULL)
 printf("%s", s);
 else
 printf("(nil)");
 
-if (i < n - 1)
-{
-if (separator == NULL)
+if (i != (n - 1) && separator != NULL)
 printf("%s", separator);
-else
-printf("%s", separator);
-}
 
 i++;
 }
