@@ -23,7 +23,7 @@ va_start(ptr, n);
 i = 0;
 while (i < n)
 {
-s = va_arg(strings, char *);
+s = va_arg(ptr, char *);
 
 if (s != NULL)
 printf("%s", s);
