@@ -18,9 +18,6 @@ unsigned int i, sum;
 
 va_list ptr;
 
-if (n == 0)
-return (0);
-
 va_start(ptr, n);
 
 i = 0;
