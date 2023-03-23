@@ -18,7 +18,7 @@ unsigned int i;
 va_list ptr;
 char *s;
 
-if (*separator == 0 ||separator == NULL)
+if (*separator == 0 || separator == NULL)
 s = "";
 else
 s = (char *) separator;
@@ -32,7 +32,7 @@ printf("%d", va_arg(ptr, int));
 i = 1;
 while (i < n)
 {
-printf("%s%d", s,va_arg(ptr, int));
+printf("%s%d", s, va_arg(ptr, int));
 
 i++;
 }
