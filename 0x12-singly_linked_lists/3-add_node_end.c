@@ -11,8 +11,9 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-list_t *node_pt, *check;
 char *s = strdup(str);
+list_t *node_pt, *check;
+int i = 0;
 
 node_pt = malloc(sizeof(list_t));
 if (node_pt == NULL)
@@ -20,8 +21,11 @@ return (NULL);
 
 if (str)
 {
+while (str[i] != '\0')
+i++;
+
 node_pt->str = s;
-node_pt->len = strlen(s);
+node_pt->len = i;
 }
 else
 {
