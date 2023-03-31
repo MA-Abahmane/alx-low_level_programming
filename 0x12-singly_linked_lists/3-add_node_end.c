@@ -11,6 +11,7 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
+char *s = strdup(str);
 list_t *node_pt, *check;
 int i = 0;
 
@@ -23,8 +24,8 @@ if (str)
 while (str[i] != '\0')
 i++;
 
-node_pt->str = i;
-node_pt->len = count;
+node_pt->str = s;
+node_pt->len = i;
 }
 else
 {
