@@ -21,7 +21,7 @@ return (NULL);
 
 if (str)
 {
-while (str[counter] != '\0')
+while (str[i] != '\0')
 i++;
 
 node_pt->str = i;
