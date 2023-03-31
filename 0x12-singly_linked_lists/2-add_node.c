@@ -23,7 +23,7 @@ if (pt == NULL)
 return (NULL);
 
 pt->str = s;
-pt->len = strlen(s);
+pt->len = i;
 pt->next = *head;
 
 *head = pt;
