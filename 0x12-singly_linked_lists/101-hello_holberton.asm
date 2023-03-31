@@ -10,7 +10,7 @@ main:
    push rbp
    mov rbp, rsp
 
-   mov rsi, hello
+   mov rsi, message
    mov rdi, format
    call printf
 
