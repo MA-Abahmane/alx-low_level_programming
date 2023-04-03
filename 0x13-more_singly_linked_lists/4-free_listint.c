@@ -15,7 +15,7 @@ while (head)
 {
 next = head->next;
 free(head->n);
-free(head->next);
+free(head);
 head = next;
 }
 
