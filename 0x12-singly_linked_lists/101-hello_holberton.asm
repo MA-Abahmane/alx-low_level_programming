@@ -1,16 +1,19 @@
-global start
+section .data
+message:	   db "Hello, Holberton",10,0
+format:	   db "%s",0
 
-section .text
-start:
-  mov rax, 1
-  mov rdi, 1
-  mov rsi, message
-  mov rdx, 13
-  syscall
+   section .text
+   global main
+   extern printf
 
-  mov eax, 60
-  xor rdi, rdi
-  syscall
+main:
+   push rbp
+   mov rbp, rsp
 
-message:
-  db "Hello, Holberton", 10
+   mov rsi, message
+   mov rdi, format
+   call printf
+
+   pop rbp
+   mov rax, 0
+   ret
