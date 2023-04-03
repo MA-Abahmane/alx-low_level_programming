@@ -22,4 +22,6 @@ return (head);
 head = head->next;
 count++;
 }
+
+return (NULL);
 }
