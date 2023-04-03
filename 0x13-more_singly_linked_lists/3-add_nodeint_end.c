@@ -33,5 +33,5 @@ ptr->next = new_node;
 else
 *head = new_node;
 
-return(new_node);
+return (new_node);
 }
