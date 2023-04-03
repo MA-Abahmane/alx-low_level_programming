@@ -14,9 +14,9 @@ unsigned int count = 0;
 
 while (h != NULL)
 {
+count++;
 printf("%d\n", h->n);
 h = h->next;
-count++;
 }
 
 return (count);
