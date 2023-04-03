@@ -15,8 +15,9 @@ int count = 0;
 while (h)
 {
 count++;
-printf("%d\n", h->n);
+printf("%d", h->n);
 h = h->next;
+printf("\n")
 }
 
 return (count);
