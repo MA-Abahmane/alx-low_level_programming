@@ -4,7 +4,7 @@
  * delete_nodeint_at_index - a function that deletes a node
  *    at a given Index.
  * @head: given linked list.
- * @idx:  given index.
+ * @index:  given index.
  *
  * Return: return 1 on success, and -1 on failure.
  */
