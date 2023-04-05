@@ -37,7 +37,7 @@ while (idx > 1)
 ptr = ptr->next;
 if (!ptr)
 {
-free(ptr);
+//free(ptr);
 return (NULL);
 }
 idx--;
