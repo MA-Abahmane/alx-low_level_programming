@@ -13,7 +13,7 @@ listint_t *reverse_listint(listint_t **head)
 listint_t *prev, *curr;
 
 /* check if head is not null */
-if((*head) != NULL)
+if ((*head) != NULL)
 {
 prev = (*head);
 curr = (*head)->next;
