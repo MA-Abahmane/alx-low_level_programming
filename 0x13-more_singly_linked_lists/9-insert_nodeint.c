@@ -15,8 +15,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 int num = n;
 listint_t *new_node = NULL, *ptr;
 
-if (*head == NULL)
-return (NULL);
 /* The new node */
 new_node = malloc(sizeof(listint_t));
 if (new_node == NULL)
@@ -29,10 +27,10 @@ if (idx == 0)
 {
 new_node->next = (*head);
 *head = new_node;
-return(*head);
+return (*head);
 }
 
-/* if the new node will be placed in the lists body  */
+/* if the new node will be placed in the lists body */
 while (idx > 1)
 {
 ptr = ptr->next;
