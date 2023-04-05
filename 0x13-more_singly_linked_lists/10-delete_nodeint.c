@@ -41,9 +41,8 @@ return (-1);
 count++;
 }
 
-/* remove to node on index from
- *   the linked list and free it.
- */
+/* Remove to node on index from */
+/* the linked list and free it. */
 sub = ptr->next;
 ptr->next = sub->next;
 
