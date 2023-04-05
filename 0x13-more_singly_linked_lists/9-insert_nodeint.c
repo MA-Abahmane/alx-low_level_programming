@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * sum_listint - a function that inserts a new node
- *    at a given position.
+ * insert_nodeint_at_index - a function that inserts a new node
+ *      at a given position.
  * @head: given linked list.
  * @idx:  given index.
  *
@@ -11,7 +11,7 @@
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-unsigned int num = n, count = 0, size = 1;
+unsigned int num = n;
 listint_t *new_node = NULL, *ptr;
 
 if (*head == NULL)
@@ -22,39 +22,39 @@ new_node = malloc(sizeof(listint_t));
 if (new_node == NULL)
 return (NULL);
 
-ptr = *head;
-/* Find the linked lists size*/
-while (ptr->next != NULL)
-{
-ptr = ptr->next;
-size++;
-}
-
-if (idx > size)
-return (NULL);
-
-ptr = *head;
-/* search for the node in the index (idx) */
-while (ptr->next != NULL)
-{
-if (count + 1 == idx)
-{
-break;
-}
-ptr = ptr->next;
-count++;
-}
-
-/* add the new node */
 new_node->n = num;
 
-if (ptr->next != NULL)
+ptr = *head;
+
+/* If the new node will be the head node */
+if (idx == 0)
+{
 new_node->next = ptr->next;
+*head = new_node;
+free(ptr);
 
+return(*head);
+}
+
+/* if the new node will be placed in the lists body  */
 else
-new_node->next = NULL;
+{
 
+while (idx > 1)
+{
+ptr = ptr->next;
+if (ptr == NULL)
+{
+free(ptr);
+return (NULL);
+}
+idx--;
+}
+
+new_node->next = ptr->next;
 ptr->next = new_node;
-
 return (new_node);
+}
+
+return (NULL);
 }
