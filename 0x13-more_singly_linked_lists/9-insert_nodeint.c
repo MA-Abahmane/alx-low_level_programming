@@ -29,7 +29,7 @@ ptr = *head;
 /* If the new node will be the head node */
 if (idx == 0)
 {
-new_node->next = ptr->next;
+new_node->next = (*head);
 *head = new_node;
 free(ptr);
 
@@ -37,24 +37,20 @@ return(*head);
 }
 
 /* if the new node will be placed in the lists body  */
-else
-{
-
 while (idx > 1)
 {
 ptr = ptr->next;
-if (ptr == NULL)
+if (!ptr)
 {
 free(ptr);
 return (NULL);
 }
+
 idx--;
 }
 
 new_node->next = ptr->next;
 ptr->next = new_node;
-return (new_node);
-}
 
-return (NULL);
+return (new_node);
 }
