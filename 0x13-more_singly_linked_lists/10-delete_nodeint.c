@@ -6,43 +6,48 @@
  * @head: given linked list.
  * @idx:  given index.
  *
- * Return: return 1 on success, and -1 on failure
+ * Return: return 1 on success, and -1 on failure.
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-unsigned int count = 0;
-listint_t *ptr;
+unsigned int count;
+listint_t *ptr, *sub;
 
 if (!*head || !head)
 return (-1);
 
 ptr = *head;
 
+/* Delete head: */
 if (index == 0)
 {
 *head = (*head)->next;
 free(ptr);
+
+return (1);
 }
 
-else
+/* Delete body nodes: */
+/* Find the node before the index */
+count = 0;
+while (count < (index - 1))
 {
-
-while (ptr->next != NULL)
-{
-if (count + 1 == index)
-break;
 
 ptr = ptr->next;
-
 if (ptr == NULL)
 return (-1);
 
 count++;
 }
 
-ptr->next = ptr->next->next;
-}
+/* remove to node on index from
+ *   the linked list and free it.
+ */
+sub = ptr->next;
+ptr->next = sub->next;
+
+free(sub);
 
 return (1);
 }
