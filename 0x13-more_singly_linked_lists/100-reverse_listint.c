@@ -10,29 +10,29 @@
 
 listint_t *reverse_listint(listint_t **head)
 {
-listint_t *prevNode, *curNode;
+listint_t *prev, *curr;
 
 /* check if head is not null */
 if((*head) != NULL)
 {
-prevNode = (*head);
-curNode = (*head)->next;
+prev = (*head);
+curr = (*head)->next;
+
 (*head) = (*head)->next;
 
 /* set the first node as the last one */
-prevNode->next = NULL;
-
-while((*head) != NULL)
+prev->next = NULL;
+while ((*head) != NULL)
 {
 (*head) = (*head)->next;
-curNode->next = prevNode;
+curr->next = prev;
 
-prevNode = curNode;
-curNode = (*head);
+prev = curr;
+curr = (*head);
 }
 
 /* set the last node as head */
-(*head) = prevNode;
+(*head) = prev;
 }
 
 return (*head);
