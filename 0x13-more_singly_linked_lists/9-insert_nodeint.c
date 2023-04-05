@@ -22,6 +22,7 @@ return (NULL);
 
 new_node->n = num;
 ptr = *head;
+
 /* If the new node will be the head node */
 if (idx == 0)
 {
@@ -36,9 +37,8 @@ while (idx > 1)
 {
 ptr = ptr->next;
 if (!ptr)
-{
 return (NULL);
-}
+
 idx--;
 }
 
