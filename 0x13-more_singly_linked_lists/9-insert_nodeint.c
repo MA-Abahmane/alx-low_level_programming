@@ -17,22 +17,18 @@ listint_t *new_node = NULL, *ptr;
 
 if (*head == NULL)
 return (NULL);
-
 /* The new node */
 new_node = malloc(sizeof(listint_t));
 if (new_node == NULL)
 return (NULL);
 
 new_node->n = num;
-
 ptr = *head;
-
 /* If the new node will be the head node */
 if (idx == 0)
 {
 new_node->next = (*head);
 *head = new_node;
-
 return(*head);
 }
 
@@ -45,12 +41,10 @@ if (!ptr)
 free(ptr);
 return (NULL);
 }
-
 idx--;
 }
 
 new_node->next = ptr->next;
 ptr->next = new_node;
-
 return (new_node);
 }
