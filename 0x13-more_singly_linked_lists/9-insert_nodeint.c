@@ -25,9 +25,9 @@ ptr = *head;
 /* If the new node will be the head node */
 if (idx == 0)
 {
-new_node->next = (*head);
-*head = new_node;
-return (*head);
+new_node->next = (ptr);
+ptr = new_node;
+return (ptr);
 }
 
 /* if the new node will be placed in the lists body */
