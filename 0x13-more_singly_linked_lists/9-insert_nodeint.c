@@ -27,7 +27,8 @@ if (idx == 0)
 {
 new_node->next = (ptr);
 ptr = new_node;
-return (ptr);
+*head = ptr;
+return (*head);
 }
 
 /* if the new node will be placed in the lists body */
