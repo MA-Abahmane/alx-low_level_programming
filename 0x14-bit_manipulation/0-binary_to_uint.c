@@ -32,3 +32,6 @@ return (0);
 
 ++i;
 }
+
+return (num);
+}
