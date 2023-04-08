@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * clear_bit - a function that returns the number of bits
+ * flip_bits - a function that returns the number of bits
  *      you need to flip a number to another.
  * @n: base number.
  * @m: number to reach.
