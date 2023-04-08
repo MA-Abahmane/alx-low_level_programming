@@ -2,7 +2,7 @@
 
 /**
  * binary_to_uint - a function that converts
- *   a binary number to an unsigned int.
+ *    a binary number to an unsigned int.
  * @b: is pointing to a string of 0 and 1 chars.
  *
  * Return: the converted number, or 0 if error.
