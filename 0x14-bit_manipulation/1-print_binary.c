@@ -10,6 +10,6 @@
 
 void print_binary(unsigned long int n)
 {
-unsigned long code = n;
-printf("%B", code);
+unsigned long int num = n;
+printf("%B", num);
 }
