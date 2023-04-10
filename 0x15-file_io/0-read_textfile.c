@@ -45,16 +45,3 @@ free(buffer);
   
 return (size);
 }
-  
-  /* count each char printed from the buffer */
-size = write(STDOUT_FILENO, buffer, Bcount);
-
-if (size != Bcount)
-  return (0);
-
-
-/* close file */
-fclose(Fptr);
-  
-return (size);
-}
