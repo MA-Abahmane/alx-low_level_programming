@@ -12,14 +12,14 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-ssize_t size = 0, Bcount;
+ssize_t fl, size, Bcount;
 char *buffer;
 
 if (filename == NULL)
 return (0);
   
   /* open file to read only mode */
-ssize_t fl = open(filename, O_RDONLY);
+fl = open(filename, O_RDONLY);
 if (fl == -1)
 return (0);
   
@@ -30,8 +30,6 @@ return (0);
 
   /* count the amount of bytes (chars) added to buffer */
 Bcount = read(fl, buffer, letters);
-if (Bcount <= 0)
-return (0);
   
   /* count each char writen from the buffer */
 size = write(STDOUT_FILENO, buffer, Bcount);
@@ -42,7 +40,6 @@ if (size != Bcount)
 
 /* close file */
 close(fl);
-free(buffer);
   
 return (size);
 }
