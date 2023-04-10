@@ -36,7 +36,7 @@ return (0);
 size = write(STDOUT_FILENO, buffer, Bcount);
 
 if (size != Bcount)
-  return (0);
+return (0);
 
 
 /* close file */
