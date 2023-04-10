@@ -12,15 +12,15 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-ssize_t size, Bcount;
+ssize_t size = 0, Bcount;
 char *buffer;
 
 if (filename == NULL)
 return (0);
   
-  /* open file to read mode */
-FILE *Fptr = fopen(filename, "r");
-if (Fptr == NULL)
+  /* open file to read only mode */
+ssize_t fl = open(filename, O_RDONLY);
+if (fl == -1)
 return (0);
   
   /* declaring a buffer for the wanted file chars */
@@ -29,19 +29,20 @@ if (buffer == NULL)
 return (0);
 
   /* count the amount of bytes (chars) added to buffer */
-Bcount = fread(buffer, 1, letters, Fptr);
+Bcount = read(fl, buffer, letters);
 if (Bcount <= 0)
 return (0);
   
-  /* count each char printed from the buffer */
+  /* count each char writen from the buffer */
 size = write(STDOUT_FILENO, buffer, Bcount);
 
 if (size != Bcount)
-return (0);
+  return (0);
 
 
 /* close file */
-fclose(Fptr);
+close(fl);
+free(buffer);
   
 return (size);
 }
