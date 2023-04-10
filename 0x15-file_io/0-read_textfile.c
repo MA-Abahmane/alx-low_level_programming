@@ -12,7 +12,8 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-ssize_t size = 0;
+ssize_t size, Bcount;
+char *buffer;
 
 if (filename == NULL)
 return (0);
@@ -23,12 +24,12 @@ if (Fptr == NULL)
 return (0);
   
   /* declaring a buffer for the wanted file chars */
-char *buffer = malloc(letters);
+buffer = malloc(letters);
 if (buffer == NULL)
 return (0);
 
   /* count the amount of bytes (chars) added to buffer */
-ssize_t Bcount = fread(buffer, 1, letters, Fptr);
+Bcount = fread(buffer, 1, letters, Fptr);
 if (Bcount <= 0)
 return (0);
   
@@ -41,7 +42,6 @@ return (0);
 
 /* close file */
 fclose(Fptr);
-free(buffer);
   
 return (size);
 }
