@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-int fileFrom, fileTo, start = 0, end = 1024;
+int fileFrom, fileTo, bwrite = 0, bread = 1024;
 char buffer[1024];
 
 
@@ -36,10 +36,10 @@ exit(99);
 /* copy the content of the origin file to the destination one*/
   /* Now we read from fileTo (origin) to the buffer */
   /* then we write the buffer content to the fileTO (destination) */
-while (end == 1024)
+while (bread == 1024)
 {
 bread = read(fileFrom, buffer, 1024);
-if (end == -1)
+if (bread == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
