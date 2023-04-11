@@ -3,7 +3,9 @@
 
 int main(int argc, char *argv[])
 {
+FILE *fileFrom, *fileTo;
 size_t bread, bwrite;
+char buffer[1024];
 
 if (argc != 3)
 {
@@ -12,7 +14,7 @@ exit(97);
 }
 
   /* Open origin file to read in binary mode */
-FILE *fileFrom = fopen(argv[1], "rb");
+fileFrom = fopen(argv[1], "rb");
 if (fileFrom == NULL)
 {
 printf("Error: Can't read from file %s\n", argv[1]);
@@ -20,7 +22,7 @@ exit(98);
 }
 
   /* Open destination file to write in binary mode */
-FILE *fileTo = fopen(argv[2], "wb");
+fileTo = fopen(argv[2], "wb");
 if (fileTo == NULL)
 {
 printf("Error: Can't write to %s\n", argv[2]);
@@ -29,8 +31,6 @@ exit(99);
 
 
 /* copy the content of the origin file to the destination one*/
-  /* declaring a buffer */
-char buffer[1024];
   /* Now we read from fileTo (origin) to the buffer */
   /* then we write the buffer content to the fileTO (destination) */
 while ((bread = fread(buffer, 1, 1024, fileFrom)) > 0)
