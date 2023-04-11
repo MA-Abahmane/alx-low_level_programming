@@ -9,60 +9,60 @@
  */
 int main(int argc, char *argv[])
 {
-FILE *fileFrom, *fileTo;
-size_t bread, bwrite;
+int fileFrom, fileTo, start = 0, end = 1024;
 char buffer[1024];
+
 
 if (argc != 3)
 {
-printf("Usage: cp file_from file_to\n");
-exit(97);
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 }
   /* Open origin file to read in binary mode */
-fileFrom = fopen(argv[1], "rb");
-if (fileFrom == NULL)
+fileFrom = open(argv[1], O_RDONLY);
+if (fileFrom == -1)
 {
-printf("Error: Can't read from file %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
   /* Open destination file to write in binary mode */
-fileTo = fopen(argv[2], "wb");
-if (fileTo == NULL)
+  /* set fileTo permission to "rw-rw-r--" (664 in octal notation) */
+fileTo = open(argv[2],  O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR
+	| S_IRGRP | S_IWGRP | S_IROTH);
+if (fileTo == -1)
 {
-printf("Error: Can't write to %s\n", argv[2]);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
 
 /* set fileTo permission to "rw-rw-r--" (664 in octal notation) */
-chmod(argv[2], S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 /* copy the content of the origin file to the destination one*/
   /* Now we read from fileTo (origin) to the buffer */
   /* then we write the buffer content to the fileTO (destination) */
-while ((bread = fread(buffer, 1, 1024, fileFrom)) > 0)
+while (end == 1024)
 {
-bwrite = fwrite(buffer, 1, bread, fileTo);
-
-if (bwrite != bread)
+end = read(fileFrom, buffer, 1024);
+if (end == -1)
 {
-printf("Error: Can't write to %s\n", argv[2]);
-exit(99);
-}
-}
-if (ferror(fileFrom))
-{
-printf("Error: Can't read from file %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-if (fclose(fileTo) == EOF)
+start = write(fileTo, buffer, end);
+if (start < end)
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+}
+
+
+if (close(fileTo) == -1)
 {
-printf("Error: Can't close fd %s\n", argv[2]);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileTo);
 exit(100);
 }
-if (fclose(fileFrom) == EOF)
+if (close(fileFrom) == -1)
 {
-printf("Error: Can't close fd %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileFrom);
 exit(100);
 }
+
 
 return (0);
 }
