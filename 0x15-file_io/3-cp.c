@@ -32,7 +32,7 @@ while (bread == 1024)
 bread = read(fileFrom, buffer, 1024);
 if (bread == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]). exit(98);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 }
 bwrite = write(fileTo, buffer, bread);
 if (bwrite < bread)
