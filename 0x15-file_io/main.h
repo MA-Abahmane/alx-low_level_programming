@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN_H_
+#define MAIN_H_
 
 /* Librarys */
 #include <stdio.h>
@@ -9,6 +9,7 @@
 #include <math.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+#include <sys/types.h>
 
 /* Function prototypes */
 int _putchar(char c);
