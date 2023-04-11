@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-int fileFrom, fileTo, bwrite = 0, bread = 1024
+int fileFrom, fileTo, bwrite = 0, bread = 1024;
 char buffer[1024];
 
 if (argc != 3)
