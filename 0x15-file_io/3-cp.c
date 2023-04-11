@@ -29,6 +29,8 @@ printf("Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
 
+/* set fileTo permission to "rw-rw-r--" (664 in octal notation) */
+chmod(argv[2], S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 
 /* copy the content of the origin file to the destination one*/
   /* Now we read from fileTo (origin) to the buffer */
