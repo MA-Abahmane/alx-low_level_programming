@@ -1,6 +1,12 @@
 #include "main.h"
-
-
+/**
+ * main - a program that copies the content of a
+ *    file to another file.
+ * @argv: given main parameters array.
+ * @argc: array size.
+ *
+ * Return: 0 on success, exit on failur.
+ */
 int main(int argc, char *argv[])
 {
 FILE *fileFrom, *fileTo;
@@ -12,7 +18,6 @@ if (argc != 3)
 printf("Usage: cp file_from file_to\n");
 exit(97);
 }
-
   /* Open origin file to read in binary mode */
 fileFrom = fopen(argv[1], "rb");
 if (fileFrom == NULL)
@@ -20,7 +25,6 @@ if (fileFrom == NULL)
 printf("Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-
   /* Open destination file to write in binary mode */
 fileTo = fopen(argv[2], "wb");
 if (fileTo == NULL)
@@ -31,7 +35,6 @@ exit(99);
 
 /* set fileTo permission to "rw-rw-r--" (664 in octal notation) */
 chmod(argv[2], S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
-
 /* copy the content of the origin file to the destination one*/
   /* Now we read from fileTo (origin) to the buffer */
   /* then we write the buffer content to the fileTO (destination) */
@@ -45,19 +48,16 @@ printf("Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
 }
-
 if (ferror(fileFrom))
 {
 printf("Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-
 if (fclose(fileTo) == EOF)
 {
 printf("Error: Can't close fd %s\n", argv[2]);
 exit(100);
 }
-
 if (fclose(fileFrom) == EOF)
 {
 printf("Error: Can't close fd %s\n", argv[1]);
