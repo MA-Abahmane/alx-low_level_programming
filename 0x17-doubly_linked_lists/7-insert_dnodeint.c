@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * insert_dnodeint_at_index - a function that adds a new node at given index.
  * @h: list to change.
@@ -17,6 +16,7 @@ node = malloc(sizeof(dlistint_t));
 if (node == NULL)
 return (NULL);
 node->n = n;
+
 /* if new node will be set a head of the list */
 if (idx == 0)
 {
