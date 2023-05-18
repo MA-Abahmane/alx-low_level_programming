@@ -22,7 +22,7 @@ ptr = ptr->next;
 }
 
 /* if index in not accurate */
-if (index > (count - 1) || index < 0)
+if (index > (count - 1) || index <= -1)
 return (NULL);
 
 /* get node data at given index */
