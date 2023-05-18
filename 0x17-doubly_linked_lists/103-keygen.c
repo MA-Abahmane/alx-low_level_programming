@@ -1,5 +1,6 @@
 #include <string.h>
 #include <stdio.h>
+#include <signal.h>
 
 /**
  * struct dlistint_s - doubly linked list
@@ -10,22 +11,10 @@
  * 
  */
 
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__))argc, char __attribute__((__unused__))*argv[])
 {
-char *user_name, *pass_code, *userN, *passW;
-  
-user_name = "julien";
-pass_code = "`./keygen5 julien`";
 
-
-userN = argv[1];
-passW = argv[2];
-
-
-if (argc == 2 || (userN == user_name && passW == pass_code))
-printf("Congrats!\n");
-else
-printf("Segmentation fault (core dumped)\n");
+raise(SIGSEGV);
 
 return (0);
 }
