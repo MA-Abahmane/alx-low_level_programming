@@ -5,7 +5,6 @@
  * @h: list to change.
  * @idx: new node index.
  * @n: data of new node.
- *
  * Return: pointer to new node.
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
@@ -40,6 +39,7 @@ if (ptr)
 {
 if (ptr->next)
 ptr->next->prev = node;
+
 node->next = ptr->next;
 node->prev = ptr;
 ptr->next = node;
