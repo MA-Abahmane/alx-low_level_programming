@@ -29,7 +29,7 @@ node->next = *h;
 return (node);
 }
 /* if: the head node in it larger than our node */
-*ptr = *h;
+ptr = h;
 while (count < (idx - 1) && ptr != NULL)
 {
 ptr = ptr->next;
