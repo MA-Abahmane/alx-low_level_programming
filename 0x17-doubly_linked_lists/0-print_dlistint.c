@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * main -  a function that prints all the elements of a dlistint_t list.
+ * print_dlistint -  a function that prints all the elements of a dlistint_t list.
  * @h: list to print its elements
  *
  * Return: the number of nodes
@@ -16,9 +16,9 @@ ptr = h;
 
 while (ptr)
 {
-printf("%d\n",ptr->n);
+printf("%d\n", ptr->n);
 ptr = ptr->next;
-count ++;
+count++;
 }
 
 return (count);
