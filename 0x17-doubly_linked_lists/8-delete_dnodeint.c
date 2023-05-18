@@ -4,14 +4,11 @@
  * delete_dnodeint_at_index - freeing list nodes at given index
  * @head: list head pointer
  * @index: give index index
- *
  * Return: 1 on success, -1 on fail.
  */
-
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-dlistint_t *ptr = *head;
-dlistint_t *prev_node = *head;
+dlistint_t *ptr = *head, *prev_node;
 unsigned int count;
 
 /* if index is 0; free head */
@@ -30,12 +27,14 @@ return (1);
 
 /* free node at index */
 count = 0;
+prev_node = *head;
 while (count < (index - 1) && prev_node != NULL)
 {
 prev_node = prev_node->next;
 count++;
 }
-/* concat previous node with the next next node, then free */
+
+/* concat previous node with the next node, then free curent one */
 if (prev_node)
 {
 ptr = prev_node->next;
@@ -45,8 +44,7 @@ ptr->next->prev = prev_node;
 }
 prev_node->next = ptr->next;
 free(ptr);
-return(1);
+return (1);
 }
-
 return (-1);
 }
