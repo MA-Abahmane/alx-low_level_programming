@@ -15,8 +15,8 @@ unsigned int count = 0;
 node = malloc(sizeof(dlistint_t));
 if (node == NULL)
 return (NULL);
-node->n = n;
 
+node->n = n;
 /* if new node will be set a head of the list */
 if (idx == 0)
 {
