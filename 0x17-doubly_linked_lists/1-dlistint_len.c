@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * main -   a function that returns the number of elements in a linked   
+ * dlistint_len - a function that returns the number of elements in a linked
  *    dlistint_t list.
  * @h: list to print its elements
  *
@@ -15,7 +15,7 @@ int count = 0;
 while (h)
 {
 h = h->next;
-count ++;
+count++;
 }
 
 return (count);
