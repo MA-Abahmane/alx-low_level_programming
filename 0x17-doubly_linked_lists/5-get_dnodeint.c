@@ -1,8 +1,10 @@
 #include "lists.h"
 
 /**
- * free_dlistint -  a function that frees a given list
- * @head: list to free
+ * get_dnodeint_at_index -  a function that returns the nth node of a 
+ *    dlistint_t linked list.
+ * @head: list head pointer
+ * @index: index of the wanted node
  *
  * Return: None
  */
