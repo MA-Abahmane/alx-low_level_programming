@@ -4,7 +4,7 @@
 /** rand - a cracked version of rand that return the numbers 
 *  I WANT (he he he)
  *
- * Return: the winning numbers I need.
+ * Return: the winning numbers I need (9 8 10 24 75 9).
  */
 
 int rand()
@@ -28,7 +28,7 @@ if (count == 3)
 return (24);
 
 if (count == 4)
-return (72);
+return (75);
 
 if (count == 5)
 return (9);
