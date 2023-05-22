@@ -30,7 +30,7 @@ return (24);
 if (count == 4)
 return (72);
 
-if (count == 4)
+if (count == 5)
 return (9);
 
 /* if called more then needed, return random num */
