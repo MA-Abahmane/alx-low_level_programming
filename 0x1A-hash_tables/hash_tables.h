@@ -40,7 +40,7 @@ typedef struct hash_table_s
 
 /* My methods */
 
-void my_free(hash_node_t *node);
+/*void my_free(hash_node_t *node);*/
 
 
 /* Prototypes */

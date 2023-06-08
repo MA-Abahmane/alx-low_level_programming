@@ -28,7 +28,7 @@ return (0);
 
 /* check all sub value keys for any match */
 currnt = ht->array[idx];
-while (currnt->next != NULL)
+while (currnt != NULL)
 {
 /* if match found; undate key value */
 if (strcmp(currnt->key, key) == 0)
@@ -60,16 +60,4 @@ return (0);
 newNode->next = ht->array[idx];
 ht->array[idx] = newNode;
 return (1);
-}
-
-
-/**
- * my_free - free a node from the hash table
- * @node: node to free
- */
-void my_free(hash_node_t *node)
-{
-free(node->key);
-free(node->value);
-free(node);
 }
