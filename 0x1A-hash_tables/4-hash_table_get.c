@@ -16,7 +16,7 @@ hash_node_t *currnt;
 
 
 if (key == NULL || ht == NULL)
-  return (NULL);
+return (NULL);
 
 /* get the index of the key */
 idx = key_index((const unsigned char *)key, ht->size);
