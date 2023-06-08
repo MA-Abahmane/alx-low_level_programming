@@ -19,7 +19,7 @@ return (NULL);
 
 /* setting the tables nodes */
 hashT->size = size;
-hashT->array = malloc(sizeof(hash_node_t *) * size);
+hashT->array = malloc(size * sizeof(hash_node_t *));
 if (hashT->array == NULL)
 {
 free(hashT);
