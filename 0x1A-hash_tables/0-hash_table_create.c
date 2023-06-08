@@ -21,7 +21,10 @@ return (NULL);
 hashT->size = size;
 hashT->array = malloc(sizeof(hash_node_t *) * size);
 if (hashT->array == NULL)
+{
+free(hashT);
 return (NULL);
+}
 
 /* setting all table nodes to null */
 for (; i < size; i++)

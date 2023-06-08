@@ -10,7 +10,7 @@
 unsigned long int hash_djb2(const unsigned char *str)
 {
 int c;
-unsigned long int Hsh = 5381;
+unsigned long int hash = 5381;
 
 /* calculates a hash value for a given */
 /* string using the djb2 algorithm */
@@ -18,6 +18,5 @@ while ((c = *str++))
 {
 hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
 }
-
-return (Hsh);
+return (hash);
 }

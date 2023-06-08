@@ -15,58 +15,50 @@ unsigned long int idx;
 hash_node_t *newNode, *currnt;
 
 
-if (key == NULL || ht == NULL)
+if (key == NULL || ht == NULL || value == NULL)
 return (0);
 
 /* get the index of the key */
-idx = key_index((const unsigned char *)key, ht->size);
+idx = key_index((unsigned char *)key, ht->size);
 
-/* set the new node */
+/* allocating the new node */
 newNode = malloc(sizeof(hash_node_t));
 if (newNode == NULL)
 return (0);
 
-newNode->key = strdup((char *)key);
-newNode->value = strdup((char *)value);
-newNode->next = NULL;
-
-/* check if the key contains no values */
-if (ht->array[idx] == NULL)
-{
-ht->array[idx] = newNode;
-}
-/* if node has sub values */
-else
-{
-/* if the keys are same; replace the node */
+/* check all sub value keys for any match */
 currnt = ht->array[idx];
+while (currnt->next != NULL)
+{
+/* if match found; undate key value */
 if (strcmp(currnt->key, key) == 0)
 {
-newNode->next = currnt->next;
-ht->array[idx] = newNode;
-free(currnt);
+free(currnt->value);
+currnt->value = strdup(value);
+if (currnt->value == NULL)
+return (0);
+
 return (1);
 }
-
-/* check all sub value of the key for any match */
-while (currnt->next != NULL || strcmp(currnt->key, key) != 0)
 currnt = currnt->next;
-
-if (strcmp(currnt->key, key) == 0)
-{
-newNode->next = currnt->next->next;
-my_free(currnt->next);
-currnt->next = newNode;
-return (1);
 }
-/* no match; set the value as the head node */
-else
+
+/* no match; set the node as the head node */
+newNode->key = strdup(key);
+if (newNode->key == NULL)
 {
+free(newNode);
+return (0);
+}
+newNode->value = strdup(value);
+if (newNode->value == NULL)
+{
+free(newNode->key);
+free(newNode);
+return (0);
+}
 newNode->next = ht->array[idx];
 ht->array[idx] = newNode;
-}
-}
-
 return (1);
 }
 
