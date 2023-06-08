@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - a hash function implementing the djb2 algorithm.
+ * hash_table_get - a hash function implementing the djb2 algorithm.
  * @ht: ht is the hash table you want to add
  * @key: key is the key
  *
