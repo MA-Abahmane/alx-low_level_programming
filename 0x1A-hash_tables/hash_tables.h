@@ -38,6 +38,14 @@ typedef struct hash_table_s
 } hash_table_t;
 
 
+/* My methods */
+
+void my_free(hash_node_t *node)
+{
+free(node->key);
+free(node->value);
+free(node);
+}
 
 /* Prototypes */
 
