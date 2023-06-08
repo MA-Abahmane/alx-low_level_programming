@@ -13,16 +13,14 @@ hash_node_t *newNode, *currnt;
 
 if (key == NULL || ht == NULL || value == NULL)
 return (0);
-/* get the index of the key */
 idx = key_index((unsigned char *)key, ht->size);
 newNode = malloc(sizeof(hash_node_t));
 if (newNode == NULL)
 return (0);
-/* check all sub value keys for any match */
+/* check all keys for any match. no match; set the node as the head node */
 currnt = ht->array[idx];
 while (currnt != NULL)
 {
-/* Look for a matching key. no match; set the node as the head node */
 if (strcmp(currnt->key, key) == 0)
 {
 free(currnt->value);
