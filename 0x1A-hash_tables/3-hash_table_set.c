@@ -54,8 +54,9 @@ currnt = currnt->next;
 
 if (strcmp(currnt->key, key) == 0)
 {
-newNode->next = currnt->next;
-ht->array[idx] = newNode;
+newNode->next = currnt->next->next;
+my_free(currnt->next);
+currnt->next = newNode;
 return (1);
 }
 /* no match; set the value as the head node */
@@ -67,4 +68,12 @@ ht->array[idx] = newNode;
 }
   
 return (1);
+}
+
+
+void my_free(hash_node_t *node)
+{
+free(node->key);
+free(node->value);
+free(node);
 }

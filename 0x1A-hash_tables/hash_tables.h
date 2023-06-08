@@ -40,12 +40,8 @@ typedef struct hash_table_s
 
 /* My methods */
 
-void my_free(hash_node_t *node)
-{
-free(node->key);
-free(node->value);
-free(node);
-}
+void my_free(hash_node_t *node);
+
 
 /* Prototypes */
 

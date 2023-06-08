@@ -9,7 +9,7 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-int i = 0;
+unsigned long int i = 0;
 hash_table_t *hashT;
 
 /* setting the hash table */
