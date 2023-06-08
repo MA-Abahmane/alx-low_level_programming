@@ -24,7 +24,7 @@ idx = key_index((const unsigned char *)key, ht->size);
 /* set the new node */
 newNode = malloc(sizeof(hash_node_t));
 if (newNode == NULL)
-  return (0);
+return (0);
 
 newNode->key = strdup((char *)key);
 newNode->value = strdup((char *)value);
@@ -66,11 +66,15 @@ newNode->next = ht->array[idx];
 ht->array[idx] = newNode;
 }
 }
-  
+
 return (1);
 }
 
 
+/**
+ * my_free - free a node from the hash table
+ * @node: node to free
+ */
 void my_free(hash_node_t *node)
 {
 free(node->key);
