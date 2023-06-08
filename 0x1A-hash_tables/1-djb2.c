@@ -16,7 +16,7 @@ unsigned long int Hsh = 5381;
 /* string using the djb2 algorithm */
 while ((c = *str++))
 {
-Hsh = (((Hsh << 5) +Hsh) +c);
+Hsh = (((Hsh << 5) + Hsh) + c);
 }
 
 return (Hsh);
