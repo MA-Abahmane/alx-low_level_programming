@@ -9,7 +9,7 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-unsigned long int i = 0;
+unsigned long int i;
 hash_table_t *hashT;
 
 /* setting the hash table */
@@ -27,7 +27,7 @@ return (NULL);
 }
 
 /* setting all table nodes to null */
-for (; i < size; i++)
+for (i = 0; i < size; i++)
 {
 hashT->array[i] = NULL;
 }
