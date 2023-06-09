@@ -10,6 +10,9 @@ void hash_table_delete(hash_table_t *ht)
 hash_node_t *node, *ptr;
 unsigned int i;
 
+if (ht == NULL)
+return;
+
 i = 0;
 /* loop throut the hash table */
 while (i < ht->size)
