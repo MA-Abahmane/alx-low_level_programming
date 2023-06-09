@@ -38,6 +38,48 @@ return (hashT);
 }
 
 
+/**
+ * shash_table_set - a function
+ * @ht: table
+ * @key: is the key
+ * @value: is the value
+ * Return: None
+ */
+int shash_table_set(shash_table_t *ht, const char *key, const char *value)
+{
+(void)ht;
+(void)key;
+(void)value;
+return (0);
+}
+
+
+/**
+ * shash_table_get - a function
+ * @key: is the key
+ * @ht: table
+ * Return: None
+ */
+char *shash_table_get(const shash_table_t *ht, const char *key)
+{
+(void)ht;
+(void)key;
+return (NULL); 
+}
+
+/**
+ * shash_table_print_rev - a function
+ * @ht: table
+ * Return: None
+ */
+void shash_table_print_rev(const shash_table_t *ht)
+{
+(void)ht;
+return;
+}
+
+
+
 
 /**
  * shash_table_print - a function that prints a hash table.
@@ -102,3 +144,4 @@ i++;
 free(ht->array);
 free(ht);
 }
+
