@@ -28,6 +28,5 @@ free(ptr);
 i++;
 }
 free(ht->array);
-free(ht->size);
 free(ht);
 }
