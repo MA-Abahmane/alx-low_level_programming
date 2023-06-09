@@ -24,8 +24,8 @@ while (node != NULL)
 {
 ptr = node;
 node = node->next;
-free(ptr->key);
 free(ptr->value);
+free(ptr->key);
 free(ptr);
 }
 
