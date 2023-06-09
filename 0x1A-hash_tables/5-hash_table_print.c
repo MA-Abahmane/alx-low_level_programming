@@ -32,7 +32,7 @@ printf("'%s': '%s'", node->key, node->value);
 node = node->next;
 f = 1;
 }
-  
+
 ++i;
 }
 
