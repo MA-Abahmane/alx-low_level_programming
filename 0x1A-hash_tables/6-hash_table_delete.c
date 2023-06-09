@@ -15,7 +15,7 @@ return;
 
 i = 0;
 /* loop throut the hash table */
-while (i < ht->size)
+while (i <= ht->size)
 {
 node = ht->array[i];
 /* free node if its not NULL */
