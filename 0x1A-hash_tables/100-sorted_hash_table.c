@@ -64,7 +64,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 {
 (void)ht;
 (void)key;
-return (NULL); 
+return (NULL);
 }
 
 /**
