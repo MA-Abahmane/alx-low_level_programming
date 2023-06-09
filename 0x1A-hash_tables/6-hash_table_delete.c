@@ -19,7 +19,7 @@ while (i < ht->size)
 {
 node = ht->array[i];
 /* free node if its not NULL */
-while (node)
+while (node != NULL)
 {
 ptr = node;
 node = node->next;
