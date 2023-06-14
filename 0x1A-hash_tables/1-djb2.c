@@ -3,7 +3,7 @@
 
 /**
  * hash_djb2 - a hash function implementing the djb2 algorithm.
- * @str: given string to conver to hash value
+ * @str: given string to convert to hash value
  *
  * Return: a pointer to the newly created hash table
  */
@@ -16,7 +16,7 @@ unsigned long int hash_djb2(const unsigned char *str)
 
 	while ((c = *str++))
 	{
-		hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
+		hash = ((hash << 5) + hash) + c;
 	}
 	return (hash);
 }
