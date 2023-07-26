@@ -24,14 +24,11 @@ NAME = school
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-## By declaring 'all' as 'PHONY', 'make' considers the file 'school' as outdated and creats a new one
-.PHONY : all
-
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) *~ school
+	$(RM) *~ $(NAME)
 
 oclean:
 	$(RM)  $(OBJ)
