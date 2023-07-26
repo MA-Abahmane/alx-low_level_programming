@@ -1,10 +1,17 @@
 #!/usr/bin/python3
 
+""" Technical interview preparation: """
+
 
 def island_perimeter(grid):
-    """ 
-    a function def island_perimeter(grid): 
-    that returns the perimeter of the island described in grid:
+    """
+        a function def island_perimeter(grid):
+        that returns the perimeter of the island described in grid:
+        Args:
+            grid (2D array): grid is a list of list of integers:
+            0 represents a water zone, 1 represents a land zone
+        Return:
+            returns the perimeter of the island described in grid
     """
 
     hight = 0
@@ -15,15 +22,14 @@ def island_perimeter(grid):
                 break
 
     width = 0
-    l = len(grid[0])
-    for ndx in range(l):
+    lenght = len(grid[0])
+    for ndx in range(lenght):
         for arr in grid:
             if (arr[ndx] == 1):
                 width += 1
                 break
-    
-    return 2*(hight + width)
 
+    return 2*(hight + width)
 
 # grid = [
 #       [0, 0, 0, 0, 0, 0],
