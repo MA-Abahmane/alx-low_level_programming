@@ -42,7 +42,7 @@ endif
 ## This helps avoid conflicts with files that might have the same name as the targets.
 .PHONY: all clean oclean fclean re
 
-all: $(OBJ)
+all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
