@@ -42,6 +42,7 @@ endif
 ## This helps avoid conflicts with files that might have the same name as the targets.
 .PHONY: all clean oclean fclean re
 
+## check if m.h exists then compile
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
