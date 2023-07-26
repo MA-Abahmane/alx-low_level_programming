@@ -28,14 +28,11 @@ RM = rm -f
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-%.o: %.c
-	$(CC) -c $< -o $@
-
 clean:
 	$(RM) *~ school
 
 oclean:
-	$(RM) main.o school.o
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
