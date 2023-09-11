@@ -3,9 +3,14 @@
 
 
 /* Libraries */
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 
+
+/* Tools */
+int SFunc(int *array, int start, int end, int value);
+void print_array(int *array, int start, int end);
 
 /* Prototypes */
 int linear_search(int *array, size_t size, int value);
