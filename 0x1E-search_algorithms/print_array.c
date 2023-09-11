@@ -1,5 +1,3 @@
-#include "search_algos.h"
-
 /**
  * print_array -  Print given array
  * @array: array to print

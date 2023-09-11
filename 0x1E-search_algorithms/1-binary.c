@@ -9,7 +9,6 @@
  *
  * Return:  return the first index where value is located.
  */
-void print_array(int *array, int start, int end);
 
 int binary_search(int *array, size_t size, int value)
 {
@@ -60,4 +59,22 @@ int SFunc(int *array, int start, int end, int value)
 	}
 	else
 		return (-1);
+}
+
+void print_array(int *array, int start, int end)
+{
+	int i, flag = 0;
+
+	printf("Searching in array: ");
+
+	for (i = start; i <= end; i++)
+    {	
+		if (flag == 0)
+			printf("%d", array[i]);
+		else
+			printf(", %d", array[i]);
+	
+		flag++;
+    }
+	printf("\n");
 }
