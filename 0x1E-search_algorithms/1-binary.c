@@ -18,7 +18,7 @@ int binary_search(int *array, size_t size, int value)
 	/** Binary search algorithm **/
 	/* print current search array */
 	print_array(array, 0, (int)size - 1);
-	return SFunc(array, 0, (int)size - 1, value);
+	return (SFunc(array, 0, (int)size - 1, value));
 }
 
 
@@ -48,14 +48,14 @@ int SFunc(int *array, int start, int end, int value)
 
 	else if (array[mid] > value)
 	{
-	    /* print current search array */
+		/* print current search array */
 	    print_array(array, start, mid - 1);
-    	return SFunc(array, start, mid - 1, value);
+		return (SFunc(array, start, mid - 1, value));
 	}
 	else if (array[mid] < value)
 	{
 		print_array(array, mid + 1, end);
-		return SFunc(array, mid + 1, end, value);
+		return (SFunc(array, mid + 1, end, value));
 	}
 	else
 		return (-1);
@@ -68,13 +68,13 @@ void print_array(int *array, int start, int end)
 	printf("Searching in array: ");
 
 	for (i = start; i <= end; i++)
-    {	
+	{
 		if (flag == 0)
 			printf("%d", array[i]);
 		else
 			printf(", %d", array[i]);
-	
+
 		flag++;
-    }
+	}
 	printf("\n");
 }
