@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# A lazy programer is a good programmer [Create files for me script]
+
+rank=2
+files=6
+
+while [ $rank -lt $((files + 1)) ]
+do
+    echo "" > $rank-O
+    rank=$(( $rank + 1 ))
+done
