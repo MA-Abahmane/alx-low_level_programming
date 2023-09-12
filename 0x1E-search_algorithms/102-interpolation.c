@@ -20,7 +20,7 @@ int interpolation_search(int *array, size_t size, int value)
 
 	/** Interpolation search algorithm **/
 	low = 0;
-	high = size -1;
+	high = size - 1;
 	while (low <= high)
 	{
 		i = low + (((double)(high - low) / (array[high] - array[low]))
