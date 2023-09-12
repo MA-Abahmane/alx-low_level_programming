@@ -20,6 +20,7 @@ int exponential_search(int *array, size_t size, int value)
 		return (-1);
 
 	/** Exponential search algorithm **/
+	/* jump through the array until we corner the value*/
 	for (; i < (int)size; i *= 2)
 	{
 
@@ -34,10 +35,9 @@ int exponential_search(int *array, size_t size, int value)
 
 	j = i > (int)size - 1 ? (int)size - 1 : i;
 
+	/* if out of bound */
 	if (i >= (int)size)
-	{
 		printf("Value found between indexes [%d] and [%d]\n", i / 2, (int)size - 1);
-	}
 
 	print_array(array, i / 2, j);
 	return (SFunc(array, i / 2, j, value));
