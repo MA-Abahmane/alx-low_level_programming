@@ -1,7 +1,8 @@
 #include "search_algos.h"
 
+
 /**
- * jump_search -  a function that searches for a value in an
+ * interpolation_search -  a function that searches for a value in an
  *    array of integers using the Interpolation search algorithm.
  * @array: is a pointer to the first element of the array to search in
  * @size: is the number of elements in array
@@ -12,44 +13,43 @@
 
 int interpolation_search(int *array, size_t size, int value)
 {
-	int i, jump;
+	size_t mid;
+	int low = 0, high = (size - 1);
 
 	if (array == NULL)
 		return (-1);
 
 	/** Interpolation search algorithm **/
-	jump = floor(sqrt(size));
-
-	for (i = 0; i < (int)size + 3; i += jump)
+	while ((array[high] != array[low]) && (value <= array[high]) &&
+	(value >= array[low]))
 	{
+		mid = low + (((double)(high - low) / (array[high] - array[low]))
+		 * (value - array[low]));
 
-		if (array[i] >= value && i < (int)size)
+		if (array[mid] > value)
 		{
-			printf("Value found between indexes [%d] and [%d]\n", i - 3, i);
-			for (i = (i - 3); i < (int)size; i++)
-			{
-				printf("Value checked array[%d] = [%d]\n", i, array[i]);
-				if (array[i] == value)
-				return (value);
-			}
+			printf("Value checked array[%ld] = [%d]\n", mid, array[mid]);
+			low = mid - 1;
 		}
-
-		 /* If out of range */
-		if (i >= (int)size)
+		else if (array[mid] < value)
 		{
-			printf("Value found between indexes [%d] and [%d]\n", i - 3, i);
-			for (i = (i - 3); i < (int)size; i++)
-			{
-				printf("-Value checked array[%d] = [%d]\n", i, array[i]);
-				if (array[i] == value)
-				return (value);
-			}
-			return (-1);
+			printf("Value checked array[%ld] = [%d]\n", mid, array[mid]);
+			high = mid + 1;
 		}
-
-		printf("Value checked array[%d] = [%d]\n", i, array[i]);
+		else
+		{	printf("Value checked array[%ld] = [%d]\n", mid, array[mid]);
+			return (mid);
+		}
 	}
 
+	if (value == array[low])
+
+	if (mid < size)
+	{
+		mid = low + (((double)(high - low) / (array[high] - array[low]))
+		 * (value - array[low]));
+		printf("Value checked array[%ld] is out of range\n", mid);
+		return (-1);
+	}
 	return (-1);
 }
- 
