@@ -29,17 +29,17 @@ int exponential_search(int *array, size_t size, int value)
 			break;
 		}
 
-        printf("Value checked array[%d] = [%d]\n", i, array[i]);
+		printf("Value checked array[%d] = [%d]\n", i, array[i]);
 	}
 
-    j = i > (int)size - 1 ? (int)size - 1 : i;
+	j = i > (int)size - 1 ? (int)size - 1 : i;
 
-    if (i >= (int)size)
-    {
-        printf("Value found between indexes [%d] and [%d]\n", i / 2, (int)size - 1);
-    }
+	if (i >= (int)size)
+	{
+		printf("Value found between indexes [%d] and [%d]\n", i / 2, (int)size - 1);
+	}
 
-    print_array(array, i / 2, j);
+	print_array(array, i / 2, j);
 	return (SFunc(array, i / 2, j, value));
 }
 
