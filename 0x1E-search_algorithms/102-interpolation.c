@@ -23,9 +23,11 @@ int interpolation_search(int *array, size_t size, int value)
 	high = size - 1;
 	while (low <= high)
 	{
+		/* estimate the index at which the value would be located */
 		i = low + (((double)(high - low) / (array[high] - array[low]))
 		* (value - array[low]));
 
+		/* Out of bound check */
 		if (i < (int)size)
 			printf("Value checked array[%d] = [%d]\n", i, array[i]);
 		else
@@ -34,7 +36,7 @@ int interpolation_search(int *array, size_t size, int value)
 			break;
 		}
 
-		/* Get to the value */
+		/* If value not found; get closer to it */
 		if (array[i] > value)
 		{
 			high = i - 1;
