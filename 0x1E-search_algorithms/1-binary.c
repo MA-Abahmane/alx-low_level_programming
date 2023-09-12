@@ -49,7 +49,7 @@ int SFunc(int *array, int start, int end, int value)
 	else if (array[mid] > value)
 	{
 		/* print current search array */
-	    print_array(array, start, mid - 1);
+		print_array(array, start, mid - 1);
 		return (SFunc(array, start, mid - 1, value));
 	}
 	else if (array[mid] < value)
