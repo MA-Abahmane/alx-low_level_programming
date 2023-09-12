@@ -32,6 +32,7 @@ int binary_search(int *array, size_t size, int value)
  *
  * Return:  return the first index where value is located.
  */
+
 int SFunc(int *array, int start, int end, int value)
 {
 	int mid;
@@ -60,6 +61,16 @@ int SFunc(int *array, int start, int end, int value)
 	else
 		return (-1);
 }
+
+
+/**
+ * print_array -  Print given array
+ * @array: array to print
+ * @start: first index in array
+ * @end: last index in array
+ *
+ * Return:  None
+ */
 
 void print_array(int *array, int start, int end)
 {
