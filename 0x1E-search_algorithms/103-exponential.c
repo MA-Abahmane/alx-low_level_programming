@@ -1,9 +1,5 @@
 #include "search_algos.h"
 
-int min(int a, int b)
-{
-	return (a < b ? a : b);
-}
 
 /**
  * exponential_search -  a function that searches for a value in an
@@ -17,7 +13,7 @@ int min(int a, int b)
 
 int exponential_search(int *array, size_t size, int value)
 {
-	int i = 1;
+	int i = 1, j;
 
 
 	if (array == NULL)
@@ -26,15 +22,25 @@ int exponential_search(int *array, size_t size, int value)
 	/** Exponential search algorithm **/
 	for (; i < (int)size; i *= 2)
 	{
-		printf("Value checked array[%d] = [%d]\n", i, array[i]);
+
 		if (array[i] > value)
 		{
 			printf("Value found between indexes [%d] and [%d]\n", i / 2, i);
 			break;
 		}
+
+        printf("Value checked array[%d] = [%d]\n", i, array[i]);
 	}
 
-	return (SFunc(array, i / 2, min(i + 1, size), value));
+    j = i > (int)size - 1 ? (int)size - 1 : i;
+
+    if (i >= (int)size)
+    {
+        printf("Value found between indexes [%d] and [%d]\n", i / 2, (int)size - 1);
+    }
+
+    print_array(array, i / 2, j);
+	return (SFunc(array, i / 2, j, value));
 }
 
 
