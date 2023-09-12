@@ -2,7 +2,7 @@
 
 /**
  * jump_search -  a function that searches for a value in an
- *    array of integers using the Jump search algorithm.
+ *    array of integers using the Interpolation search algorithm.
  * @array: is a pointer to the first element of the array to search in
  * @size: is the number of elements in array
  * @value: is the value to search for
@@ -10,14 +10,14 @@
  * Return:  return the first index where value is located.
  */
 
-int jump_search(int *array, size_t size, int value)
+int interpolation_search(int *array, size_t size, int value)
 {
 	int i, jump;
 
 	if (array == NULL)
 		return (-1);
 
-	/** Jump search algorithm **/
+	/** Interpolation search algorithm **/
 	jump = floor(sqrt(size));
 
 	for (i = 0; i < (int)size + 3; i += jump)
