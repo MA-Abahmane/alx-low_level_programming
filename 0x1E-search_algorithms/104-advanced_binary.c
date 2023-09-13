@@ -1,8 +1,8 @@
 #include "search_algos.h"
 
 /**
- * binary_search -  a function that searches for a value in an
- *    array of integers using the Binary search algorithm.
+ * advanced_binary -  a function that searches for a value in an
+ *    array of integers using the Binary search algorithm [Advanced].
  * @array: is a pointer to the first element of the array to search in
  * @size: is the number of elements in array
  * @value: is the value to search for
@@ -12,61 +12,54 @@
 
 int advanced_binary(int *array, size_t size, int value)
 {
+	int *lst;
+
 	if (array == NULL)
 		return (-1);
 
 	/** Binary search algorithm **/
-	/* print current search array */
-	print_array(array, 0, (int)size - 1);
-	return (SFunc(array, 0, (int)size - 1, value));
+	lst = looker(array, (int)size, value);
+	return (!lst ? -1 : lst - array);
 }
 
 
 /**
- * SFunc -  a function that searches for a value in an
+ * looker -  a function that searches for a value in an
  *    array of integers using the Binary search algorithm [Recursion].
  * @array: is a pointer to the first element of the array to search in
- * @start: start index of the array to search
- * @end: end index of the array to search
+ * @size: is the number of elements in array
  * @value: the value to search for
  *
- * Return:  return the first index where value is located.
+ * Return:  return the index of the [first] value in the array
  */
 
-int SFunc(int *array, int start, int end, int value)
+int *looker(int *array, int size, int value)
 {
-	int mid;
+	int i;
 
-	if (start > end || (start == end && array[start] != value))
-		return (-1);
+	if (!size || !array)
+		return (NULL);
+
+	print_array(array, 0, size - 1);
 
 	/* split array in the middle into two parts and set mid number as pivot */
-	mid = floor((start + end) / 2);
+	i = floor((size - 1) / 2);
 
 	/* if pivot is the value return, else; keep searching in recursion */
-	if (array[mid] == value)
-    {
-        if (array[mid - 1] == value)
-        {
-            print_array(array, start, mid);
-            return (SFunc(array, start, mid, value));
-        }
-        else
-		    return (mid);
-    }
-	else if (array[mid] > value)
+	if (array[i] == value)
 	{
-		/* print current search array */
-		print_array(array, start, mid - 1);
-		return (SFunc(array, start, mid - 1, value));
+		if (i)
+			return (looker(array, i + 1, value));
+		return (array + i);
 	}
-	else if (array[mid] < value)
+	else if (array[i] > value)
 	{
-		print_array(array, mid + 1, end);
-		return (SFunc(array, mid + 1, end, value));
+		return (looker(array, i + 1, value));
 	}
 	else
-		return (-1);
+	{
+		return (looker(array + i + 1, size - i - 1, value));
+	}
 }
 
 
