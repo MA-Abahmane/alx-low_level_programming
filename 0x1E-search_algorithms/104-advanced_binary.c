@@ -1,5 +1,6 @@
 #include "search_algos.h"
 
+
 /**
  * advanced_binary -  a function that searches for a value in an
  *    array of integers using the Binary search algorithm [Advanced].
@@ -18,6 +19,11 @@ int advanced_binary(int *array, size_t size, int value)
 		return (-1);
 
 	/** Binary search algorithm **/
+	/*
+	 *	If the result is not NULL; calculate the index of the found value
+	 *	in the original array by subtracting array from the result pointer
+	 *	 and return this index.
+	*/
 	lst = looker(array, (int)size, value);
 	return (!lst ? -1 : lst - array);
 }
@@ -37,28 +43,33 @@ int *looker(int *array, int size, int value)
 {
 	int i;
 
-	if (!size || !array)
+	if (!array || !size)
 		return (NULL);
 
+	/* print given array */
 	print_array(array, 0, size - 1);
 
-	/* split array in the middle into two parts and set mid number as pivot */
+	/* calculates the index i as the middle index of the array */
 	i = floor((size - 1) / 2);
 
-	/* if pivot is the value return, else; keep searching in recursion */
+	/* recursively call self on the [left] half of the array */
 	if (array[i] == value)
 	{
+		/* check if i is true [i != 0] */
 		if (i)
 			return (looker(array, i + 1, value));
+		/* returning a pointer to the first occurrence of the value */
 		return (array + i);
 	}
-	else if (array[i] > value)
-	{
-		return (looker(array, i + 1, value));
-	}
-	else
+	/* recursively call self on the [left] half of the array */
+	else if (array[i] < value)
 	{
 		return (looker(array + i + 1, size - i - 1, value));
+	}
+	/* recursively call self on the [right] half of the array */
+	else
+	{
+		return (looker(array, i + 1, value));
 	}
 }
 
