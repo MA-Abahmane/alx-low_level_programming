@@ -62,7 +62,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
     /* search for the value in the specified array range */
     while (ptr)
     {
-        printf("Value checked array[%d] = [%d]\n", step2, ptr->n);
+        printf("Value checked at index [%d] = [%d]\n", step2, ptr->n);
         if (ptr->n == value)
             return (ptr);
 
