@@ -2,7 +2,7 @@
 
 
 /**
- * advanced_binary -  a function that searches for a value in a sorted 
+ * linear_skip -  a function that searches for a value in a sorted
  *    skip list of integers.
  * @list: list to search
  * @value: is the value to search for
